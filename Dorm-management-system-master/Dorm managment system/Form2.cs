@@ -14,5 +14,10 @@ namespace Dorm_managment_system
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
