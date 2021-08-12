@@ -218,7 +218,7 @@ namespace Dorm_managment_system
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 450);
+            this.ClientSize = new System.Drawing.Size(924, 450);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnFacilities);
             this.Controls.Add(this.txtEndstay);
@@ -242,7 +242,7 @@ namespace Dorm_managment_system
             this.MaximizeBox = false;
             this.Name = "Accomodation_Request";
             this.ShowIcon = false;
-            this.Text = "Accomodation_Request";
+            this.Text = "Accomodation Request";
             this.ResumeLayout(false);
             this.PerformLayout();
 
