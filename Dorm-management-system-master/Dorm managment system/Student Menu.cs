@@ -24,5 +24,20 @@ namespace Dorm_managment_system
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblstu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Student_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
