@@ -78,5 +78,12 @@ namespace Dorm_managment_system
         {
             System.Windows.Forms.Application.ExitThread();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {   this.Hide();
+            Warden_Menu f3 = new Warden_Menu(); // Instantiate a Form object.
+            f3.ShowDialog(); // Show Form and          
+            this.Close(); // closes the current Form instance.
+        }
     }
 }
