@@ -76,10 +76,26 @@ namespace Dorm_managment_system
 
         private void btnShow_Click(object sender, EventArgs e)
         {
-            string Student_ID = listView1.SelectedItems[0].SubItems[0].Text;
-            string Student_Name = listView1.SelectedItems[0].SubItems[1].Text;
-            string ReqBlock = listView1.SelectedItems[0].SubItems[2].Text;
-            MessageBox.Show(Student_ID + " , " + Student_Name + " , " + ReqBlock);
+            for (int i = 0; i < listView1.Items.Count; i++)
+            {
+                if (listView1.Items[i].Selected)
+                {
+                    string Student_ID = listView1.SelectedItems[0].SubItems[0].Text;
+                    string Student_Name = listView1.SelectedItems[0].SubItems[1].Text;
+                    string ReqBlock = listView1.SelectedItems[0].SubItems[2].Text;
+                    MessageBox.Show(Student_ID + " , " + Student_Name + " , " + ReqBlock);
+                    i--;
+                    break;
+                }
+            else
+            {
+                    MessageBox.Show("Retry again");
+
+
+            }
+
+            }
+           
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -93,6 +109,11 @@ namespace Dorm_managment_system
             Warden_Menu f3 = new Warden_Menu(); // Instantiate a Form object.
             f3.ShowDialog(); // Show Form and          
             this.Close(); // closes the current Form instance.
+        }
+
+        private void lstUnits_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

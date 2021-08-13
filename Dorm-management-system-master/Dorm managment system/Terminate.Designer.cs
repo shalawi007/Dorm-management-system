@@ -81,7 +81,7 @@ namespace Dorm_managment_system
             this.txtStudID.Name = "txtStudID";
             this.txtStudID.Size = new System.Drawing.Size(196, 25);
             this.txtStudID.TabIndex = 40;
-            this.txtStudID.Text = "Insert TP number here...";
+            this.txtStudID.TextChanged += new System.EventHandler(this.txtStudID_TextChanged);
             // 
             // lblStudentID
             // 

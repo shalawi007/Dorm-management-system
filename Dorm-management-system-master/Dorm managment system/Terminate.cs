@@ -64,7 +64,7 @@ namespace Dorm_managment_system
                     MessageBox.Show(Student_ID + " , " + Student_Name + " , " + Presunit + "Terminated");
                     listView1.Items[i].Remove();
                     i--;
-            }
+                }
             else 
             {
                 MessageBox.Show("Retry again");
@@ -84,6 +84,11 @@ namespace Dorm_managment_system
             Warden_Menu f3 = new Warden_Menu(); // Instantiate a Form object.
             f3.ShowDialog(); // Show Form and          
             this.Close(); // closes the current Form instance.
+        }
+
+        private void txtStudID_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
