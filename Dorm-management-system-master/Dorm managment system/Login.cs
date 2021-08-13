@@ -15,12 +15,22 @@ namespace Dorm_managment_system
             InitializeComponent();
         }
 
-        private void registerToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }

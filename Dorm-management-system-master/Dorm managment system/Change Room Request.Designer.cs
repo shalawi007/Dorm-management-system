@@ -98,6 +98,7 @@ namespace Dorm_managment_system
             this.btnBlockA.TabIndex = 6;
             this.btnBlockA.Text = "Block A";
             this.btnBlockA.UseVisualStyleBackColor = true;
+            this.btnBlockA.Click += new System.EventHandler(this.btnBlockA_Click);
             // 
             // btnBlockB
             // 

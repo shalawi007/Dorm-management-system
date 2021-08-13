@@ -8,14 +8,19 @@ using System.Windows.Forms;
 
 namespace Dorm_managment_system
 {
-    public partial class Change_Room_Request : Form
+    public partial class Student_Menu : Form
     {
-        public Change_Room_Request()
+        public Student_Menu()
         {
             InitializeComponent();
         }
 
-        private void btnBlockA_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
