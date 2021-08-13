@@ -39,5 +39,12 @@ namespace Dorm_managment_system
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Student_Menu Check = new Student_Menu();
+            Check.Show();
+
+        }
     }
 }

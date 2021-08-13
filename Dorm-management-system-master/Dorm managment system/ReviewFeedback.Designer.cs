@@ -51,8 +51,8 @@ namespace Dorm_managment_system
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,6 +83,7 @@ namespace Dorm_managment_system
             this.button1.TabIndex = 1;
             this.button1.Text = "Dashboard";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -267,6 +268,7 @@ namespace Dorm_managment_system
             this.button6.TabIndex = 14;
             this.button6.Text = "Exit";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -303,17 +305,6 @@ namespace Dorm_managment_system
             this.panel3.Size = new System.Drawing.Size(831, 673);
             this.panel3.TabIndex = 10;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label5.Location = new System.Drawing.Point(36, 514);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(221, 28);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Update Feedback status";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -324,6 +315,17 @@ namespace Dorm_managment_system
             this.label6.Size = new System.Drawing.Size(169, 23);
             this.label6.TabIndex = 13;
             this.label6.Text = "Format: MM/dd/yyyy";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label5.Location = new System.Drawing.Point(36, 514);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(221, 28);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Update Feedback status";
             // 
             // Review_Feedback
             // 

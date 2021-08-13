@@ -34,5 +34,19 @@ namespace Dorm_managment_system
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Warden_Menu Check = new Warden_Menu();
+            Check.Show();
+
+        }
+
+        private void btnwarfeed_Click(object sender, EventArgs e)
+        {
+            Review_Feedback Check = new Review_Feedback();
+            Check.Show();
+
+        }
     }
 }

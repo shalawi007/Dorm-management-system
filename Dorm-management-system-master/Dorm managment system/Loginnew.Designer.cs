@@ -32,6 +32,7 @@ namespace Dorm_managment_system
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loginnew));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,7 +41,7 @@ namespace Dorm_managment_system
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,6 +69,15 @@ namespace Dorm_managment_system
             this.panel2.Size = new System.Drawing.Size(212, 140);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel4.Location = new System.Drawing.Point(0, 131);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(212, 10);
+            this.panel4.TabIndex = 9;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // pictureBox1
             // 
@@ -162,26 +172,31 @@ namespace Dorm_managment_system
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // button2
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.panel4.Location = new System.Drawing.Point(0, 131);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(212, 10);
-            this.panel4.TabIndex = 9;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(572, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(31, 29);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // Login
+            // Loginnew
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(614, 403);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Login";
+            this.Name = "Loginnew";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
@@ -208,5 +223,6 @@ namespace Dorm_managment_system
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button2;
     }
 }

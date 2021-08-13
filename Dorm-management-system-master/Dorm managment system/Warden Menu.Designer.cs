@@ -41,10 +41,10 @@ namespace Dorm_managment_system
             this.lblstu = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnwarroomreq = new System.Windows.Forms.Button();
+            this.btnaccreport = new System.Windows.Forms.Button();
+            this.btnwarfeed = new System.Windows.Forms.Button();
             this.btnssignacc = new System.Windows.Forms.Button();
             this.btnwartermacc = new System.Windows.Forms.Button();
-            this.btnwarfeed = new System.Windows.Forms.Button();
-            this.btnaccreport = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,12 +77,13 @@ namespace Dorm_managment_system
             this.button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(56, 154);
+            this.button1.Location = new System.Drawing.Point(56, 155);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 38);
             this.button1.TabIndex = 1;
             this.button1.Text = "Dashboard";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel2
             // 
@@ -182,6 +183,35 @@ namespace Dorm_managment_system
             this.btnwarroomreq.Text = "Change room requests";
             this.btnwarroomreq.UseVisualStyleBackColor = false;
             // 
+            // btnaccreport
+            // 
+            this.btnaccreport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.btnaccreport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnaccreport.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnaccreport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnaccreport.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnaccreport.Location = new System.Drawing.Point(358, 168);
+            this.btnaccreport.Name = "btnaccreport";
+            this.btnaccreport.Size = new System.Drawing.Size(202, 46);
+            this.btnaccreport.TabIndex = 0;
+            this.btnaccreport.Text = "Generate Report";
+            this.btnaccreport.UseVisualStyleBackColor = false;
+            // 
+            // btnwarfeed
+            // 
+            this.btnwarfeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.btnwarfeed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnwarfeed.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnwarfeed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnwarfeed.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnwarfeed.Location = new System.Drawing.Point(15, 287);
+            this.btnwarfeed.Name = "btnwarfeed";
+            this.btnwarfeed.Size = new System.Drawing.Size(249, 46);
+            this.btnwarfeed.TabIndex = 0;
+            this.btnwarfeed.Text = "Review Feedback";
+            this.btnwarfeed.UseVisualStyleBackColor = false;
+            this.btnwarfeed.Click += new System.EventHandler(this.btnwarfeed_Click);
+            // 
             // btnssignacc
             // 
             this.btnssignacc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
@@ -209,34 +239,6 @@ namespace Dorm_managment_system
             this.btnwartermacc.TabIndex = 3;
             this.btnwartermacc.Text = "Terminate requests";
             this.btnwartermacc.UseVisualStyleBackColor = false;
-            // 
-            // btnwarfeed
-            // 
-            this.btnwarfeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnwarfeed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnwarfeed.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnwarfeed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnwarfeed.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnwarfeed.Location = new System.Drawing.Point(15, 287);
-            this.btnwarfeed.Name = "btnwarfeed";
-            this.btnwarfeed.Size = new System.Drawing.Size(249, 46);
-            this.btnwarfeed.TabIndex = 0;
-            this.btnwarfeed.Text = "Review Feedback";
-            this.btnwarfeed.UseVisualStyleBackColor = false;
-            // 
-            // btnaccreport
-            // 
-            this.btnaccreport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnaccreport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnaccreport.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnaccreport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnaccreport.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnaccreport.Location = new System.Drawing.Point(358, 168);
-            this.btnaccreport.Name = "btnaccreport";
-            this.btnaccreport.Size = new System.Drawing.Size(202, 46);
-            this.btnaccreport.TabIndex = 0;
-            this.btnaccreport.Text = "Generate Report";
-            this.btnaccreport.UseVisualStyleBackColor = false;
             // 
             // Warden_Menu
             // 

@@ -66,7 +66,17 @@ namespace Dorm_managment_system
             System.Windows.Forms.Application.ExitThread();
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Warden_Menu Check = new Warden_Menu();
+            Check.Show();
+
+        }
     }
     
 }
