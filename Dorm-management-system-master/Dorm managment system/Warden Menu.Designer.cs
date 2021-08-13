@@ -176,7 +176,7 @@ namespace Dorm_managment_system
             this.btnwarroomreq.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnwarroomreq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnwarroomreq.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnwarroomreq.Location = new System.Drawing.Point(15, 35);
+            this.btnwarroomreq.Location = new System.Drawing.Point(32, 168);
             this.btnwarroomreq.Name = "btnwarroomreq";
             this.btnwarroomreq.Size = new System.Drawing.Size(249, 46);
             this.btnwarroomreq.TabIndex = 2;
@@ -204,7 +204,7 @@ namespace Dorm_managment_system
             this.btnwarfeed.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnwarfeed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnwarfeed.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnwarfeed.Location = new System.Drawing.Point(15, 287);
+            this.btnwarfeed.Location = new System.Drawing.Point(32, 287);
             this.btnwarfeed.Name = "btnwarfeed";
             this.btnwarfeed.Size = new System.Drawing.Size(249, 46);
             this.btnwarfeed.TabIndex = 0;
@@ -219,7 +219,7 @@ namespace Dorm_managment_system
             this.btnssignacc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnssignacc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnssignacc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnssignacc.Location = new System.Drawing.Point(15, 168);
+            this.btnssignacc.Location = new System.Drawing.Point(32, 35);
             this.btnssignacc.Name = "btnssignacc";
             this.btnssignacc.Size = new System.Drawing.Size(249, 46);
             this.btnssignacc.TabIndex = 0;
@@ -252,6 +252,7 @@ namespace Dorm_managment_system
             this.Controls.Add(this.splitter1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Warden_Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Warden_Menu";
             this.Load += new System.EventHandler(this.Warden_Menu_Load);
             this.panel1.ResumeLayout(false);

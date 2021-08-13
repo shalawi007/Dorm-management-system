@@ -46,5 +46,10 @@ namespace Dorm_managment_system
             Check.Show();
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }

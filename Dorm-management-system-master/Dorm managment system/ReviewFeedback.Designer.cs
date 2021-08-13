@@ -42,6 +42,13 @@ namespace Dorm_managment_system
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -193,12 +200,49 @@ namespace Dorm_managment_system
             // 
             // listView1
             // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(15, 29);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(795, 228);
             this.listView1.TabIndex = 16;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Student_ID";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Student_Name";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Present_Unit";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Date";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Feedback";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Feedback Description";
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Status";
             // 
             // textBox1
             // 
@@ -338,6 +382,7 @@ namespace Dorm_managment_system
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Review_Feedback";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Review_Feedback";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -376,5 +421,12 @@ namespace Dorm_managment_system
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }
