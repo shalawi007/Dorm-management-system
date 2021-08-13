@@ -141,6 +141,7 @@ namespace Dorm_managment_system
             this.Controls.Add(this.gbTerminate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Terminate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Terminate";
             this.Load += new System.EventHandler(this.Terminate_Load);
             this.gbTerminate.ResumeLayout(false);
