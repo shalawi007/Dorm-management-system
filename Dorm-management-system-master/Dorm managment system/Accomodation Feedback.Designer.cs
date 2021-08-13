@@ -43,16 +43,23 @@ namespace Dorm_managment_system
             // 
             // btnSubmit
             // 
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnSubmit.Location = new System.Drawing.Point(230, 318);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(105, 39);
             this.btnSubmit.TabIndex = 0;
             this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.UseVisualStyleBackColor = false;
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
             this.lblName.Location = new System.Drawing.Point(61, 79);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(83, 20);
@@ -62,6 +69,7 @@ namespace Dorm_managment_system
             // lblStudentID
             // 
             this.lblStudentID.AutoSize = true;
+            this.lblStudentID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
             this.lblStudentID.Location = new System.Drawing.Point(61, 124);
             this.lblStudentID.Name = "lblStudentID";
             this.lblStudentID.Size = new System.Drawing.Size(86, 20);
@@ -71,6 +79,7 @@ namespace Dorm_managment_system
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
             this.label3.Location = new System.Drawing.Point(61, 222);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 20);
@@ -80,6 +89,7 @@ namespace Dorm_managment_system
             // lblRoomno
             // 
             this.lblRoomno.AutoSize = true;
+            this.lblRoomno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
             this.lblRoomno.Location = new System.Drawing.Point(61, 172);
             this.lblRoomno.Name = "lblRoomno";
             this.lblRoomno.Size = new System.Drawing.Size(80, 20);
@@ -88,6 +98,9 @@ namespace Dorm_managment_system
             // 
             // txtName
             // 
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtName.ForeColor = System.Drawing.SystemColors.Window;
             this.txtName.Location = new System.Drawing.Point(206, 76);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(125, 27);
@@ -95,6 +108,9 @@ namespace Dorm_managment_system
             // 
             // txtStudentID
             // 
+            this.txtStudentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.txtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStudentID.ForeColor = System.Drawing.SystemColors.Window;
             this.txtStudentID.Location = new System.Drawing.Point(206, 121);
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.Size = new System.Drawing.Size(125, 27);
@@ -102,6 +118,9 @@ namespace Dorm_managment_system
             // 
             // txtRoomno
             // 
+            this.txtRoomno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.txtRoomno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRoomno.ForeColor = System.Drawing.SystemColors.Window;
             this.txtRoomno.Location = new System.Drawing.Point(206, 169);
             this.txtRoomno.Name = "txtRoomno";
             this.txtRoomno.Size = new System.Drawing.Size(125, 27);
@@ -110,14 +129,19 @@ namespace Dorm_managment_system
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.label1.Location = new System.Drawing.Point(24, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 20);
+            this.label1.Size = new System.Drawing.Size(307, 32);
             this.label1.TabIndex = 10;
             this.label1.Text = "Accomodation Feedback";
             // 
             // txtFeedback
             // 
+            this.txtFeedback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.txtFeedback.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFeedback.ForeColor = System.Drawing.SystemColors.Window;
             this.txtFeedback.Location = new System.Drawing.Point(206, 219);
             this.txtFeedback.Multiline = true;
             this.txtFeedback.Name = "txtFeedback";
@@ -128,6 +152,7 @@ namespace Dorm_managment_system
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(570, 396);
             this.Controls.Add(this.txtFeedback);
             this.Controls.Add(this.label1);
@@ -139,10 +164,13 @@ namespace Dorm_managment_system
             this.Controls.Add(this.lblStudentID);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.btnSubmit);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Accomodation_Feedback";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accomodation Feedback";
+            this.Load += new System.EventHandler(this.Accomodation_Feedback_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
