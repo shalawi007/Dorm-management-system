@@ -1,7 +1,7 @@
 ﻿
 namespace Dorm_managment_system
 {
-    partial class Login
+    partial class Loginnew
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Dorm_managment_system
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loginnew));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();

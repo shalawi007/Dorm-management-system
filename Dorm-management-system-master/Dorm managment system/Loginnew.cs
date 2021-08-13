@@ -8,19 +8,14 @@ using System.Windows.Forms;
 
 namespace Dorm_managment_system
 {
-    public partial class Warden_Menu : Form
+    public partial class Loginnew : Form
     {
-        public Warden_Menu()
+        public Loginnew()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Warden_Menu_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }
@@ -30,7 +25,12 @@ namespace Dorm_managment_system
 
         }
 
-        private void lblstu_Click(object sender, EventArgs e)
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
