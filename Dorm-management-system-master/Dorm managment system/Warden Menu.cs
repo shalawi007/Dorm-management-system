@@ -13,6 +13,9 @@ namespace Dorm_managment_system
         public Warden_Menu()
         {
             InitializeComponent();
+            if (Instances.values.loggedInWarden != null) {
+                label1.Text = Instances.values.loggedInWarden.Name;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,6 +36,14 @@ namespace Dorm_managment_system
         private void lblstu_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnssignacc_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var menu = new Roomassign();
+            menu.ShowDialog();
+            Close();
         }
     }
 }

@@ -104,21 +104,22 @@ namespace Dorm_managment_system
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(49, 76);
+            this.label1.Location = new System.Drawing.Point(59, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Warden Name";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(49, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(59, 9);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 64);
+            this.pictureBox1.Size = new System.Drawing.Size(110, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -183,7 +184,7 @@ namespace Dorm_managment_system
             this.btnwarroomreq.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnwarroomreq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnwarroomreq.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnwarroomreq.Location = new System.Drawing.Point(13, 26);
+            this.btnwarroomreq.Location = new System.Drawing.Point(13, 126);
             this.btnwarroomreq.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnwarroomreq.Name = "btnwarroomreq";
             this.btnwarroomreq.Size = new System.Drawing.Size(218, 34);
@@ -228,13 +229,14 @@ namespace Dorm_managment_system
             this.btnssignacc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnssignacc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnssignacc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnssignacc.Location = new System.Drawing.Point(13, 126);
+            this.btnssignacc.Location = new System.Drawing.Point(13, 26);
             this.btnssignacc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnssignacc.Name = "btnssignacc";
             this.btnssignacc.Size = new System.Drawing.Size(218, 34);
             this.btnssignacc.TabIndex = 0;
             this.btnssignacc.Text = "Assign Accomodation";
             this.btnssignacc.UseVisualStyleBackColor = false;
+            this.btnssignacc.Click += new System.EventHandler(this.btnssignacc_Click);
             // 
             // btnwartermacc
             // 

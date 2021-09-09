@@ -13,12 +13,17 @@ namespace Dorm_managment_system
         public Student_Menu()
         {
             InitializeComponent();
-            label1.Text = Instances.values.loggedInStudent.Name;
+            if (Instances.values.loggedInStudent != null) {
+                label1.Text = Instances.values.loggedInStudent.Name;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Hide();
+            var menu = new Accomodation_Request();
+            menu.ShowDialog();
+            Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -37,6 +42,11 @@ namespace Dorm_managment_system
         }
 
         private void Student_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

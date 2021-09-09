@@ -40,9 +40,24 @@ namespace Dorm_managment_system
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var usernameText = textBox1.Text;
+            var passwordText = textBox2.Text;
             Database dbConnection = new Database();
 
-            DataSet ds = dbConnection.getData($"SELECT * from Student where Name = '{textBox1.Text}' and Pass = '{textBox2.Text}'");
+            DataSet ds = dbConnection.getData($"SELECT * from Student where Name = '{usernameText}' and Pass = '{passwordText}'");
+
+            var wardens = Warden.getAllWardens();
+
+            Warden wardenFound = null;
+
+            foreach (var warden in wardens)
+            {
+                if (warden.Name == usernameText && warden.Pass == passwordText)
+                {
+                    wardenFound = warden;
+                }
+            }
+
             //DataSet ds = dbConnection.getData($"SELECT * from warden where Name = '{textBox1.Text}' and Pass = '{textBox2.Text}'");
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -60,10 +75,19 @@ namespace Dorm_managment_system
 
                 Hide();
                 Student_Menu menu = new Student_Menu();
-                menu.ShowDialog();         
-                Close(); 
+                menu.ShowDialog();
+                Close();
             }
-            else {
+            else if (wardenFound != null)
+            {
+                Instances.values.loggedInWarden = wardenFound;
+                Hide();
+                Warden_Menu wardenMenu = new Warden_Menu();
+                wardenMenu.ShowDialog();
+                Close();
+            }
+            else
+            {
                 MessageBox.Show("Wrong username or password!");
             }
 

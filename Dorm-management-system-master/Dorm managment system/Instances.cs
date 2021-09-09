@@ -23,6 +23,8 @@ namespace Dorm_managment_system
         }
 
         public Student loggedInStudent = null;
+        public Warden loggedInWarden = null;
+        public String defaultDateFormat = "yyyy-MM-dd";
 
     }
 }
