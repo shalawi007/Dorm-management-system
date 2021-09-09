@@ -35,10 +35,5 @@ namespace Dorm_managment_system
         {
 
         }
-
-        private void btnBlockA_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

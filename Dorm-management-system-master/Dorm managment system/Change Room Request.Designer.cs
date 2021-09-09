@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Dorm_managment_system
 {
     partial class Change_Room_Request
@@ -114,6 +116,12 @@ namespace Dorm_managment_system
             this.btnBlockA.Size = new System.Drawing.Size(94, 29);
             this.btnBlockA.TabIndex = 6;
             this.btnBlockA.Text = "Block A";
+    
+            this.btnBlockA.UseVisualStyleBackColor = false;
+
+            this.btnBlockA.UseVisualStyleBackColor = true;
+            
+ 
             this.btnBlockA.UseVisualStyleBackColor = false;
             this.btnBlockA.UseVisualStyleBackColor = true;
             this.btnBlockA.Click += new System.EventHandler(this.btnBlockA_Click);
@@ -174,6 +182,11 @@ namespace Dorm_managment_system
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void btnBlockA_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

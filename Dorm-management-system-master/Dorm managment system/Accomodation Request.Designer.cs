@@ -232,6 +232,7 @@ namespace Dorm_managment_system
             this.btnFacilities.TabIndex = 20;
             this.btnFacilities.Text = "View Facilities";
             this.btnFacilities.UseVisualStyleBackColor = false;
+            this.btnFacilities.Click += new System.EventHandler(this.btnFacilities_Click);
             // 
             // btnSubmit
             // 
