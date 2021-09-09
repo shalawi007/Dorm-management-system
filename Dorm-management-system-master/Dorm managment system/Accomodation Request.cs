@@ -40,5 +40,35 @@ namespace Dorm_managment_system
         {
 
         }
+
+        private void btnFacilities_Click(object sender, EventArgs e)
+        {
+            if (rdoBlockA.Checked)
+            {
+                lstFacilities.Items.Clear();
+                lstFacilities.Items.Add("Wifi");
+                lstFacilities.Items.Add("Cafeteria");
+                lstFacilities.Items.Add("Gym");
+                lstFacilities.Items.Add("Common area");
+                lstFacilities.Items.Add("Swimming pool");
+                lstFacilities.Items.Add("Kitchen");
+                lstFacilities.Items.Add("Laundry room");
+                lstFacilities.Items.Add("Showers");
+                lstFacilities.Items.Add("Air-conditioned rooms");
+            }
+            else
+            {
+                lstFacilities.Items.Clear();
+                lstFacilities.Items.Add("Air-conditioned rooms");
+                lstFacilities.Items.Add("Cafeteria");
+                lstFacilities.Items.Add("Gym");
+                lstFacilities.Items.Add("Common area");
+                lstFacilities.Items.Add("Kitchen");
+                lstFacilities.Items.Add("Laundry room");
+                lstFacilities.Items.Add("Showers");
+                lstFacilities.Items.Add("Wifi");
+            }
+            
+        }
     }
 }
