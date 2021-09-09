@@ -16,6 +16,7 @@ namespace Dorm_managment_system
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Accomodation_Request ());
+            Application.Run(new Roomassign());
         }
     }
 }

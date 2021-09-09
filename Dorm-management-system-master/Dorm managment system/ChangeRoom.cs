@@ -10,11 +10,7 @@ namespace Dorm_managment_system
 {
     public partial class ChangeRoom : Form
     {
-        private CheckBox checkBoxB;
-        private CheckBox checkBoxA;
-        private Label lblfilter;
         private GroupBox gbChroom;
-        private ListBox lstUnits;
         private TextBox txtStudID;
         private Label lblStudentID;
         private Label lblAproval;
@@ -26,7 +22,6 @@ namespace Dorm_managment_system
         private Button btnDecline;
         private ListView listView1;
         private Button btnShow;
-        private Label lblUnit;
 
         public ChangeRoom()
         {
@@ -35,13 +30,8 @@ namespace Dorm_managment_system
 
         private void InitializeComponent()
         {
-            this.checkBoxB = new System.Windows.Forms.CheckBox();
-            this.checkBoxA = new System.Windows.Forms.CheckBox();
-            this.lblfilter = new System.Windows.Forms.Label();
-            this.lblUnit = new System.Windows.Forms.Label();
             this.gbChroom = new System.Windows.Forms.GroupBox();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.lstUnits = new System.Windows.Forms.ListBox();
             this.txtStudID = new System.Windows.Forms.TextBox();
             this.lblStudentID = new System.Windows.Forms.Label();
             this.lblAproval = new System.Windows.Forms.Label();
@@ -54,50 +44,6 @@ namespace Dorm_managment_system
             this.btnShow = new System.Windows.Forms.Button();
             this.gbChroom.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // checkBoxB
-            // 
-            this.checkBoxB.AutoSize = true;
-            this.checkBoxB.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.checkBoxB.Location = new System.Drawing.Point(176, 370);
-            this.checkBoxB.Name = "checkBoxB";
-            this.checkBoxB.Size = new System.Drawing.Size(65, 19);
-            this.checkBoxB.TabIndex = 32;
-            this.checkBoxB.Text = "Block B";
-            this.checkBoxB.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxA
-            // 
-            this.checkBoxA.AutoSize = true;
-            this.checkBoxA.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.checkBoxA.Location = new System.Drawing.Point(104, 370);
-            this.checkBoxA.Name = "checkBoxA";
-            this.checkBoxA.Size = new System.Drawing.Size(66, 19);
-            this.checkBoxA.TabIndex = 31;
-            this.checkBoxA.Text = "Block A";
-            this.checkBoxA.UseVisualStyleBackColor = true;
-            // 
-            // lblfilter
-            // 
-            this.lblfilter.AutoSize = true;
-            this.lblfilter.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblfilter.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblfilter.Location = new System.Drawing.Point(42, 368);
-            this.lblfilter.Name = "lblfilter";
-            this.lblfilter.Size = new System.Drawing.Size(45, 19);
-            this.lblfilter.TabIndex = 30;
-            this.lblfilter.Text = "Filter";
-            // 
-            // lblUnit
-            // 
-            this.lblUnit.AutoSize = true;
-            this.lblUnit.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUnit.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblUnit.Location = new System.Drawing.Point(42, 339);
-            this.lblUnit.Name = "lblUnit";
-            this.lblUnit.Size = new System.Drawing.Size(142, 22);
-            this.lblUnit.TabIndex = 29;
-            this.lblUnit.Text = "Avaliable Units :";
             // 
             // gbChroom
             // 
@@ -121,29 +67,11 @@ namespace Dorm_managment_system
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // lstUnits
-            // 
-            this.lstUnits.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lstUnits.FormattingEnabled = true;
-            this.lstUnits.ItemHeight = 19;
-            this.lstUnits.Items.AddRange(new object[] {
-            "A-01-01",
-            "A-01-02",
-            "A-02-03",
-            "A-05-02",
-            "B-01-02",
-            "B-03-04",
-            "B-04-02"});
-            this.lstUnits.Location = new System.Drawing.Point(42, 397);
-            this.lstUnits.Name = "lstUnits";
-            this.lstUnits.Size = new System.Drawing.Size(186, 175);
-            this.lstUnits.TabIndex = 35;
-            // 
             // txtStudID
             // 
             this.txtStudID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtStudID.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtStudID.Location = new System.Drawing.Point(682, 383);
+            this.txtStudID.Location = new System.Drawing.Point(208, 373);
             this.txtStudID.Name = "txtStudID";
             this.txtStudID.Size = new System.Drawing.Size(196, 25);
             this.txtStudID.TabIndex = 37;
@@ -154,7 +82,7 @@ namespace Dorm_managment_system
             this.lblStudentID.AutoSize = true;
             this.lblStudentID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblStudentID.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblStudentID.Location = new System.Drawing.Point(530, 383);
+            this.lblStudentID.Location = new System.Drawing.Point(56, 373);
             this.lblStudentID.Name = "lblStudentID";
             this.lblStudentID.Size = new System.Drawing.Size(103, 22);
             this.lblStudentID.TabIndex = 36;
@@ -165,7 +93,7 @@ namespace Dorm_managment_system
             this.lblAproval.AutoSize = true;
             this.lblAproval.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblAproval.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblAproval.Location = new System.Drawing.Point(530, 423);
+            this.lblAproval.Location = new System.Drawing.Point(56, 413);
             this.lblAproval.Name = "lblAproval";
             this.lblAproval.Size = new System.Drawing.Size(268, 22);
             this.lblAproval.TabIndex = 38;
@@ -176,7 +104,7 @@ namespace Dorm_managment_system
             this.blUnitNo.AutoSize = true;
             this.blUnitNo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.blUnitNo.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.blUnitNo.Location = new System.Drawing.Point(530, 480);
+            this.blUnitNo.Location = new System.Drawing.Point(56, 470);
             this.blUnitNo.Name = "blUnitNo";
             this.blUnitNo.Size = new System.Drawing.Size(115, 22);
             this.blUnitNo.TabIndex = 40;
@@ -187,7 +115,7 @@ namespace Dorm_managment_system
             this.cboRooms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cboRooms.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.cboRooms.FormattingEnabled = true;
-            this.cboRooms.Location = new System.Drawing.Point(682, 477);
+            this.cboRooms.Location = new System.Drawing.Point(208, 467);
             this.cboRooms.Name = "cboRooms";
             this.cboRooms.Size = new System.Drawing.Size(196, 25);
             this.cboRooms.TabIndex = 39;
@@ -196,7 +124,7 @@ namespace Dorm_managment_system
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.Location = new System.Drawing.Point(73, 601);
+            this.btnExit.Location = new System.Drawing.Point(792, 579);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(111, 37);
             this.btnExit.TabIndex = 42;
@@ -207,17 +135,18 @@ namespace Dorm_managment_system
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBack.Location = new System.Drawing.Point(224, 601);
+            this.btnBack.Location = new System.Drawing.Point(654, 579);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(123, 37);
             this.btnBack.TabIndex = 41;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnApprove
             // 
             this.btnApprove.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnApprove.Location = new System.Drawing.Point(809, 562);
+            this.btnApprove.Location = new System.Drawing.Point(258, 529);
             this.btnApprove.Name = "btnApprove";
             this.btnApprove.Size = new System.Drawing.Size(111, 37);
             this.btnApprove.TabIndex = 44;
@@ -227,7 +156,7 @@ namespace Dorm_managment_system
             // btnDecline
             // 
             this.btnDecline.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDecline.Location = new System.Drawing.Point(662, 562);
+            this.btnDecline.Location = new System.Drawing.Point(97, 529);
             this.btnDecline.Name = "btnDecline";
             this.btnDecline.Size = new System.Drawing.Size(123, 37);
             this.btnDecline.TabIndex = 43;
@@ -259,12 +188,7 @@ namespace Dorm_managment_system
             this.Controls.Add(this.lblAproval);
             this.Controls.Add(this.txtStudID);
             this.Controls.Add(this.lblStudentID);
-            this.Controls.Add(this.lstUnits);
             this.Controls.Add(this.gbChroom);
-            this.Controls.Add(this.checkBoxB);
-            this.Controls.Add(this.checkBoxA);
-            this.Controls.Add(this.lblfilter);
-            this.Controls.Add(this.lblUnit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChangeRoom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -333,6 +257,14 @@ namespace Dorm_managment_system
         private void btnExit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Warden_Menu f3 = new Warden_Menu(); // Instantiate a Form object.
+            f3.ShowDialog(); // Show Form and          
+            this.Close(); // closes the current Form instance.
         }
     }
 }

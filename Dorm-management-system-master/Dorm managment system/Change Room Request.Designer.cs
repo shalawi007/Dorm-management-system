@@ -120,6 +120,12 @@ namespace Dorm_managment_system
             this.btnBlockA.UseVisualStyleBackColor = true;
             
  
+            this.btnBlockA.UseVisualStyleBackColor = false;
+            this.btnBlockA.UseVisualStyleBackColor = true;
+            this.btnBlockA.Click += new System.EventHandler(this.btnBlockA_Click);
+            // 
+            // btnBlockB
+            // 
             this.btnBlockB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.btnBlockB.FlatAppearance.BorderSize = 0;
             this.btnBlockB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));

@@ -44,11 +44,6 @@ namespace Dorm_managment_system
             this.blUnitNo = new System.Windows.Forms.Label();
             this.lblStartDate = new System.Windows.Forms.Label();
             this.lblEnddate = new System.Windows.Forms.Label();
-            this.lblUnit = new System.Windows.Forms.Label();
-            this.lblfilter = new System.Windows.Forms.Label();
-            this.checkBoxA = new System.Windows.Forms.CheckBox();
-            this.checkBoxB = new System.Windows.Forms.CheckBox();
-            this.lstUnits = new System.Windows.Forms.ListBox();
             this.gbRequest.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +52,7 @@ namespace Dorm_managment_system
             this.lblStudentID.AutoSize = true;
             this.lblStudentID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblStudentID.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblStudentID.Location = new System.Drawing.Point(35, 48);
+            this.lblStudentID.Location = new System.Drawing.Point(37, 40);
             this.lblStudentID.Name = "lblStudentID";
             this.lblStudentID.Size = new System.Drawing.Size(103, 22);
             this.lblStudentID.TabIndex = 1;
@@ -67,7 +62,7 @@ namespace Dorm_managment_system
             // 
             this.txtStudID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtStudID.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtStudID.Location = new System.Drawing.Point(157, 46);
+            this.txtStudID.Location = new System.Drawing.Point(159, 38);
             this.txtStudID.Name = "txtStudID";
             this.txtStudID.Size = new System.Drawing.Size(196, 25);
             this.txtStudID.TabIndex = 3;
@@ -75,14 +70,14 @@ namespace Dorm_managment_system
             // 
             // StartdatePicker
             // 
-            this.StartdatePicker.Location = new System.Drawing.Point(570, 40);
+            this.StartdatePicker.Location = new System.Drawing.Point(593, 34);
             this.StartdatePicker.Name = "StartdatePicker";
             this.StartdatePicker.Size = new System.Drawing.Size(275, 29);
             this.StartdatePicker.TabIndex = 5;
             // 
             // EnddatePicker
             // 
-            this.EnddatePicker.Location = new System.Drawing.Point(570, 88);
+            this.EnddatePicker.Location = new System.Drawing.Point(593, 82);
             this.EnddatePicker.Name = "EnddatePicker";
             this.EnddatePicker.Size = new System.Drawing.Size(275, 29);
             this.EnddatePicker.TabIndex = 8;
@@ -90,7 +85,7 @@ namespace Dorm_managment_system
             // btnAssign
             // 
             this.btnAssign.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAssign.Location = new System.Drawing.Point(754, 152);
+            this.btnAssign.Location = new System.Drawing.Point(771, 150);
             this.btnAssign.Name = "btnAssign";
             this.btnAssign.Size = new System.Drawing.Size(108, 34);
             this.btnAssign.TabIndex = 9;
@@ -100,7 +95,7 @@ namespace Dorm_managment_system
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClear.Location = new System.Drawing.Point(633, 151);
+            this.btnClear.Location = new System.Drawing.Point(664, 149);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(93, 35);
             this.btnClear.TabIndex = 10;
@@ -109,30 +104,39 @@ namespace Dorm_managment_system
             // 
             // cboRooms
             // 
+            this.cboRooms.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboRooms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cboRooms.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.cboRooms.FormattingEnabled = true;
-            this.cboRooms.Location = new System.Drawing.Point(156, 101);
+            this.cboRooms.Items.AddRange(new object[] {
+            "A-01-01",
+            "A-01-02",
+            "A-02-03",
+            "A-05-02",
+            "B-01-02",
+            "B-03-04",
+            "B-04-02"});
+            this.cboRooms.Location = new System.Drawing.Point(159, 86);
             this.cboRooms.Name = "cboRooms";
             this.cboRooms.Size = new System.Drawing.Size(196, 25);
             this.cboRooms.TabIndex = 11;
-            this.cboRooms.Text = "Pick an avaliable Unit...";
             this.cboRooms.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBack.Location = new System.Drawing.Point(658, 509);
+            this.btnBack.Location = new System.Drawing.Point(664, 528);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(123, 37);
             this.btnBack.TabIndex = 17;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.Location = new System.Drawing.Point(818, 509);
+            this.btnExit.Location = new System.Drawing.Point(828, 528);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(111, 37);
             this.btnExit.TabIndex = 18;
@@ -143,7 +147,7 @@ namespace Dorm_managment_system
             // btnShow
             // 
             this.btnShow.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnShow.Location = new System.Drawing.Point(480, 529);
+            this.btnShow.Location = new System.Drawing.Point(25, 528);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(125, 36);
             this.btnShow.TabIndex = 19;
@@ -157,9 +161,9 @@ namespace Dorm_managment_system
             this.gbRequest.Controls.Add(this.listView1);
             this.gbRequest.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gbRequest.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.gbRequest.Location = new System.Drawing.Point(12, 152);
+            this.gbRequest.Location = new System.Drawing.Point(12, 190);
             this.gbRequest.Name = "gbRequest";
-            this.gbRequest.Size = new System.Drawing.Size(593, 371);
+            this.gbRequest.Size = new System.Drawing.Size(896, 333);
             this.gbRequest.TabIndex = 20;
             this.gbRequest.TabStop = false;
             this.gbRequest.Text = "Students Requests:";
@@ -167,9 +171,9 @@ namespace Dorm_managment_system
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(6, 42);
+            this.listView1.Location = new System.Drawing.Point(6, 20);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(581, 307);
+            this.listView1.Size = new System.Drawing.Size(884, 307);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
@@ -179,18 +183,18 @@ namespace Dorm_managment_system
             this.blUnitNo.AutoSize = true;
             this.blUnitNo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.blUnitNo.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.blUnitNo.Location = new System.Drawing.Point(35, 101);
+            this.blUnitNo.Location = new System.Drawing.Point(12, 89);
             this.blUnitNo.Name = "blUnitNo";
-            this.blUnitNo.Size = new System.Drawing.Size(115, 22);
+            this.blUnitNo.Size = new System.Drawing.Size(142, 22);
             this.blUnitNo.TabIndex = 21;
-            this.blUnitNo.Text = "Unit Number";
+            this.blUnitNo.Text = "Avaliable Units :";
             // 
             // lblStartDate
             // 
             this.lblStartDate.AutoSize = true;
             this.lblStartDate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblStartDate.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblStartDate.Location = new System.Drawing.Point(439, 46);
+            this.lblStartDate.Location = new System.Drawing.Point(462, 40);
             this.lblStartDate.Name = "lblStartDate";
             this.lblStartDate.Size = new System.Drawing.Size(105, 22);
             this.lblStartDate.TabIndex = 22;
@@ -201,74 +205,12 @@ namespace Dorm_managment_system
             this.lblEnddate.AutoSize = true;
             this.lblEnddate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblEnddate.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblEnddate.Location = new System.Drawing.Point(439, 94);
+            this.lblEnddate.Location = new System.Drawing.Point(462, 89);
             this.lblEnddate.Name = "lblEnddate";
             this.lblEnddate.Size = new System.Drawing.Size(97, 22);
             this.lblEnddate.TabIndex = 23;
             this.lblEnddate.Text = "End Date :";
             this.lblEnddate.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // lblUnit
-            // 
-            this.lblUnit.AutoSize = true;
-            this.lblUnit.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUnit.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblUnit.Location = new System.Drawing.Point(639, 212);
-            this.lblUnit.Name = "lblUnit";
-            this.lblUnit.Size = new System.Drawing.Size(142, 22);
-            this.lblUnit.TabIndex = 24;
-            this.lblUnit.Text = "Avaliable Units :";
-            // 
-            // lblfilter
-            // 
-            this.lblfilter.AutoSize = true;
-            this.lblfilter.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblfilter.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblfilter.Location = new System.Drawing.Point(633, 240);
-            this.lblfilter.Name = "lblfilter";
-            this.lblfilter.Size = new System.Drawing.Size(45, 19);
-            this.lblfilter.TabIndex = 25;
-            this.lblfilter.Text = "Filter";
-            // 
-            // checkBoxA
-            // 
-            this.checkBoxA.AutoSize = true;
-            this.checkBoxA.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.checkBoxA.Location = new System.Drawing.Point(711, 237);
-            this.checkBoxA.Name = "checkBoxA";
-            this.checkBoxA.Size = new System.Drawing.Size(80, 25);
-            this.checkBoxA.TabIndex = 26;
-            this.checkBoxA.Text = "Block A";
-            this.checkBoxA.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxB
-            // 
-            this.checkBoxB.AutoSize = true;
-            this.checkBoxB.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.checkBoxB.Location = new System.Drawing.Point(797, 237);
-            this.checkBoxB.Name = "checkBoxB";
-            this.checkBoxB.Size = new System.Drawing.Size(79, 25);
-            this.checkBoxB.TabIndex = 27;
-            this.checkBoxB.Text = "Block B";
-            this.checkBoxB.UseVisualStyleBackColor = true;
-            // 
-            // lstUnits
-            // 
-            this.lstUnits.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lstUnits.FormattingEnabled = true;
-            this.lstUnits.ItemHeight = 19;
-            this.lstUnits.Items.AddRange(new object[] {
-            "A-01-01",
-            "A-01-02",
-            "A-02-03",
-            "A-05-02",
-            "B-01-02",
-            "B-03-04",
-            "B-04-02"});
-            this.lstUnits.Location = new System.Drawing.Point(639, 268);
-            this.lstUnits.Name = "lstUnits";
-            this.lstUnits.Size = new System.Drawing.Size(243, 156);
-            this.lstUnits.TabIndex = 28;
             // 
             // Roomassign
             // 
@@ -276,12 +218,7 @@ namespace Dorm_managment_system
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
-            this.Controls.Add(this.lstUnits);
             this.Controls.Add(this.btnShow);
-            this.Controls.Add(this.checkBoxB);
-            this.Controls.Add(this.checkBoxA);
-            this.Controls.Add(this.lblfilter);
-            this.Controls.Add(this.lblUnit);
             this.Controls.Add(this.lblEnddate);
             this.Controls.Add(this.lblStartDate);
             this.Controls.Add(this.blUnitNo);
@@ -323,11 +260,6 @@ namespace Dorm_managment_system
         private System.Windows.Forms.Label blUnitNo;
         private System.Windows.Forms.Label lblStartDate;
         private System.Windows.Forms.Label lblEnddate;
-        private System.Windows.Forms.Label lblUnit;
-        private System.Windows.Forms.Label lblfilter;
-        private System.Windows.Forms.CheckBox checkBoxA;
-        private System.Windows.Forms.CheckBox checkBoxB;
-        private System.Windows.Forms.ListBox lstUnits;
         private System.Windows.Forms.ListView listView1;
     }
 }

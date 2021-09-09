@@ -54,22 +54,23 @@ namespace Dorm_managment_system
 
         private void btnTerminate_Click(object sender, EventArgs e)
         {
-            
+
             for (int i = 0; i < listView1.Items.Count; i++)
             {
                 if (listView1.Items[i].Selected)
-                {   string Student_ID = listView1.SelectedItems[0].SubItems[0].Text;
+                {
+                    string Student_ID = listView1.SelectedItems[0].SubItems[0].Text;
                     string Student_Name = listView1.SelectedItems[0].SubItems[1].Text;
                     string Presunit = listView1.SelectedItems[0].SubItems[2].Text;
                     MessageBox.Show(Student_ID + " , " + Student_Name + " , " + Presunit + "Terminated");
                     listView1.Items[i].Remove();
                     i--;
-            }
-            else 
-            {
-                MessageBox.Show("Retry again");
-                        
-            }
+                }
+                else
+                {
+                    MessageBox.Show("Retry again");
+
+                }
 
             }
         }
@@ -77,6 +78,19 @@ namespace Dorm_managment_system
         private void btnExit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Warden_Menu f3 = new Warden_Menu(); // Instantiate a Form object.
+            f3.ShowDialog(); // Show Form and          
+            this.Close(); // closes the current Form instance.
+        }
+
+        private void txtStudID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

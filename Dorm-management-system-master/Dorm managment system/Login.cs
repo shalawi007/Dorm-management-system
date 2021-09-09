@@ -17,7 +17,10 @@ namespace Dorm_managment_system
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            //foreach (var student in Student.getAllStudents())
+            //{
+            //    MessageBox.Show(student.Name);
+            //}
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -31,6 +34,42 @@ namespace Dorm_managment_system
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Database dbConnection = new Database();
+
+            DataSet ds = dbConnection.getData($"SELECT * from Student where Name = '{textBox1.Text}' and Pass = '{textBox2.Text}'");
+            //DataSet ds = dbConnection.getData($"SELECT * from warden where Name = '{textBox1.Text}' and Pass = '{textBox2.Text}'");
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                DataRow firstRow = ds.Tables[0].Rows[0];
+                Student loggedInStudent = new Student(
+                    firstRow["ID"].ToString(),
+                    firstRow["Pass"].ToString(),
+                    firstRow["Name"].ToString(),
+                    firstRow["Contact"].ToString(),
+                    firstRow["Email"].ToString(),
+                    firstRow["Birth_Date"].ToString()
+                    );
+
+                Instances.values.loggedInStudent = loggedInStudent;
+
+                Hide();
+                Student_Menu menu = new Student_Menu();
+                menu.ShowDialog();         
+                Close(); 
+            }
+            else {
+                MessageBox.Show("Wrong username or password!");
+            }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
