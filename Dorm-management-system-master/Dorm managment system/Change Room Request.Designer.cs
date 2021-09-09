@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Dorm_managment_system
 {
     partial class Change_Room_Request
@@ -180,6 +182,11 @@ namespace Dorm_managment_system
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void btnBlockA_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
