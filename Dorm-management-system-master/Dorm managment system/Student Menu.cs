@@ -13,6 +13,7 @@ namespace Dorm_managment_system
         public Student_Menu()
         {
             InitializeComponent();
+            label1.Text = Instances.values.loggedInStudent.Name;
         }
 
         private void button1_Click(object sender, EventArgs e)
