@@ -14,10 +14,7 @@ namespace Dorm_managment_system
         public String Email { get; set; }
         public String Birth_Date { get; set; }
 
-        public void requestBooking()
-        {
-
-        }
+        
 
         public Student(String id)
         {

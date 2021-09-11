@@ -19,6 +19,7 @@ namespace Dorm_managment_system
         }
         public DataSet getData(String query) //get data from db
         {
+            connection = getConnection();
             SqlConnection con = connection;
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;

@@ -10,6 +10,9 @@ namespace Dorm_managment_system
 {
     public partial class Roomassign : Form
     {
+        Database dbConnection = new Database();
+        String query;
+
         public Roomassign()
         {
             InitializeComponent();
@@ -17,15 +20,20 @@ namespace Dorm_managment_system
 
         private void Roomasign_Load(object sender, EventArgs e)
         {
-            listView1.View = View.Details;
-            listView1.GridLines = true;
-            listView1.FullRowSelect = true;
+
+            query = "Select Book_ID,Std_ID,Start_Date,End_Date,Req_Block From Booking where Room_ID IS Null";
+            DataSet ds = dbConnection.getData(query);
+            dataGridView1.DataSource = ds.Tables[0];
+
+            /// listView1.View = View.Details;
+            ///listView1.GridLines = true;
+            /// listView1.FullRowSelect = true;
             //Add column header
-            listView1.Columns.Add("Student_ID", 100);
-            listView1.Columns.Add("Student name", 70);
-            listView1.Columns.Add("Requested Block", 70);
-            listView1.Columns.Add("Start Date", 100);
-            listView1.Columns.Add("End Date", 100);
+            /// listView1.Columns.Add("Student_ID", 100);
+            ///  listView1.Columns.Add("Student name", 70);
+            ///  listView1.Columns.Add("Requested Block", 70);
+            /// listView1.Columns.Add("Start Date", 100);
+            ///listView1.Columns.Add("End Date", 100);
 
         }
 
@@ -56,19 +64,17 @@ namespace Dorm_managment_system
 
         private void btnShow_Click(object sender, EventArgs e)
         {
+            
+
             //Add items in the listview
-            string[] arr = new string[5];
-            ListViewItem itm;
+            //string[] arr = new string[5];
+            ///ListViewItem itm;
 
-            Database dbConnection = new Database();
+            
 
-            DataSet ds = dbConnection.getData($"" +
-                $"select * from Booking" +
-                $" where Room_ID = null and " +
-                $"Start_Date >= {StartdatePicker.Value} and" +
-                $"End_Date <= {EnddatePicker.Value}");
+            
 
-            foreach (var row in ds.Tables[0].Rows)
+            ////foreach (var row in ds.Tables[0].Rows)
             {
                 //Add first item
 
@@ -99,6 +105,18 @@ namespace Dorm_managment_system
         private void lstUnits_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAssign_Click(object sender, EventArgs e)
+        {
+            if(txtBookID.Text != "" && txtStudID.Text != "" && cboRooms.Text != "")
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Fill All Fields", "Warning!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
