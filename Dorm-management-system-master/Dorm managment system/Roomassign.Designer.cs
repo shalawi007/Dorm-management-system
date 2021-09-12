@@ -66,6 +66,7 @@ namespace Dorm_managment_system
             this.txtStudID.Size = new System.Drawing.Size(196, 25);
             this.txtStudID.TabIndex = 3;
             this.txtStudID.Text = "Insert TP number here...";
+            this.txtStudID.Click += new System.EventHandler(this.txtStudID_Click);
             // 
             // btnAssign
             // 
@@ -87,6 +88,7 @@ namespace Dorm_managment_system
             this.btnClear.TabIndex = 10;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // cboRooms
             // 
@@ -94,19 +96,12 @@ namespace Dorm_managment_system
             this.cboRooms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cboRooms.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.cboRooms.FormattingEnabled = true;
-            this.cboRooms.Items.AddRange(new object[] {
-            "A-01-01",
-            "A-01-02",
-            "A-02-03",
-            "A-05-02",
-            "B-01-02",
-            "B-03-04",
-            "B-04-02"});
             this.cboRooms.Location = new System.Drawing.Point(546, 379);
             this.cboRooms.Name = "cboRooms";
             this.cboRooms.Size = new System.Drawing.Size(196, 25);
             this.cboRooms.TabIndex = 11;
             this.cboRooms.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cboRooms.Click += new System.EventHandler(this.cboRooms_Click);
             // 
             // btnBack
             // 

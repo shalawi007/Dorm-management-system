@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
+using System.Data.SqlClient;
 
 namespace Dorm_managment_system.Models
 {
@@ -41,7 +42,7 @@ namespace Dorm_managment_system.Models
                 $"N'{End_Date}'," +
                 $"N'{Req_Block}', " +
                 $"NULL)" +
-                $"","Booking request submitted");
+                $"");
         }
 
         public static List<Booking> getAllBooking()
@@ -66,5 +67,6 @@ namespace Dorm_managment_system.Models
             }
             return list;
         }
-    }
+            
+    }                               
 }

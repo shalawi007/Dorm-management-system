@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Dorm_managment_system
 {
@@ -25,6 +26,12 @@ namespace Dorm_managment_system
             DataSet ds = dbConnection.getData(query);
             dataGridView1.DataSource = ds.Tables[0];
 
+            ///query = "Select ID From Rooms where Status = 'Vacant'";
+            ///DataSet ds = dbConnection.getData(query);
+            ///cboRooms.DataSource = ds;
+
+
+
             /// listView1.View = View.Details;
             ///listView1.GridLines = true;
             /// listView1.FullRowSelect = true;
@@ -44,7 +51,7 @@ namespace Dorm_managment_system
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -111,12 +118,47 @@ namespace Dorm_managment_system
         {
             if(txtBookID.Text != "" && txtStudID.Text != "" && cboRooms.Text != "")
             {
+                String Book_ID = txtBookID.Text;
+                String Rooms_no = cboRooms.Text;
+                
+                //Assign the room 
+                query = "UPDATE Booking SET Room_ID = ('" + Rooms_no + "') WHERE Book_ID = ('" + Book_ID + "')";
+                dbConnection.setData(query);
+                ///Updating Room to occupied
+                query = "UPDATE Rooms SET Status = ('Occupied') WHERE ID = ('" + Rooms_no + "')";
+                dbConnection.setData(query);
+                Roomasign_Load(this, null);
+                
+                    
+                  
+          
 
-            }
-            else
+            }                                 
+            else                             
             {
                 MessageBox.Show("Fill All Fields", "Warning!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void cboRooms_Click(object sender, EventArgs e)
+        { 
+            query = "Select * From Rooms Where Status = 'Vacant'";
+            DataSet ds = dbConnection.getData(query);
+            cboRooms.DataSource = ds.Tables[0];
+            cboRooms.DisplayMember = "ID";
+            cboRooms.ValueMember = "Status";
+        }
+
+        private void txtStudID_Click(object sender, EventArgs e)
+        {
+            txtStudID.Clear();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtStudID.Clear();
+            txtBookID.Clear();
+            cboRooms.SelectedIndex = -1;
         }
     }
 }
