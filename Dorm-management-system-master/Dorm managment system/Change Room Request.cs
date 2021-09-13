@@ -17,15 +17,15 @@ namespace Dorm_managment_system
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn
- (
-      int nLeftRect,
-      int nTopRect,
-      int nRightRect,
-      int nBottomRect,
-      int nWidthEllipse,
-         int nHeightEllipse
+        (
+            int nLeftRect,
+            int nTopRect,
+            int nRightRect,
+            int nBottomRect,
+            int nWidthEllipse,
+            int nHeightEllipse
 
-  );
+        );
 
         public Change_Room_Request()
         {
@@ -42,8 +42,7 @@ namespace Dorm_managment_system
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             if (txtRoomno.Text != "" && (rdoBlockA.Checked ^ rdoBlockB.Checked))
-            {   
-                
+            {                   
                 String Rooms_no = txtRoomno.Text;
 
                 if (rdoBlockA.Checked)
@@ -59,17 +58,20 @@ namespace Dorm_managment_system
                     dbConnection.setData(query);
                    
                 }
-                
-
-
-
-
-
+             
             }
             else
             {
                 MessageBox.Show("Fill All Fields", "Warning!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Student_Menu f3 = new Student_Menu(); // Instantiate a Form object.
+            f3.ShowDialog(); // Show Form and          
+            this.Close(); // closes the current Form instance.
         }
 
         private void button2_Click(object sender, EventArgs e)

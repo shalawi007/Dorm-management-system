@@ -39,13 +39,14 @@ namespace Dorm_managment_system
             this.rdoBlockB = new System.Windows.Forms.RadioButton();
             this.rdoBlockA = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblRoomnumb
             // 
             this.lblRoomnumb.AutoSize = true;
             this.lblRoomnumb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
-            this.lblRoomnumb.Location = new System.Drawing.Point(40, 79);
+            this.lblRoomnumb.Location = new System.Drawing.Point(45, 81);
             this.lblRoomnumb.Name = "lblRoomnumb";
             this.lblRoomnumb.Size = new System.Drawing.Size(108, 15);
             this.lblRoomnumb.TabIndex = 1;
@@ -66,7 +67,7 @@ namespace Dorm_managment_system
             this.txtRoomno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.txtRoomno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRoomno.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtRoomno.Location = new System.Drawing.Point(181, 77);
+            this.txtRoomno.Location = new System.Drawing.Point(183, 81);
             this.txtRoomno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRoomno.Name = "txtRoomno";
             this.txtRoomno.Size = new System.Drawing.Size(110, 23);
@@ -91,7 +92,7 @@ namespace Dorm_managment_system
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnSubmit.Location = new System.Drawing.Point(259, 190);
+            this.btnSubmit.Location = new System.Drawing.Point(459, 175);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(94, 27);
@@ -141,6 +142,23 @@ namespace Dorm_managment_system
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnBack.Location = new System.Drawing.Point(45, 175);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(94, 27);
+            this.btnBack.TabIndex = 12;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Change_Room_Request
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -148,6 +166,7 @@ namespace Dorm_managment_system
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(622, 242);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.rdoBlockB);
             this.Controls.Add(this.rdoBlockA);
@@ -183,5 +202,6 @@ namespace Dorm_managment_system
         private System.Windows.Forms.RadioButton rdoBlockB;
         private System.Windows.Forms.RadioButton rdoBlockA;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBack;
     }
 }

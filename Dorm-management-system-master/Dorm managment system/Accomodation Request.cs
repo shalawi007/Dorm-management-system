@@ -117,5 +117,18 @@ namespace Dorm_managment_system
             }
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Student_Menu f3 = new Student_Menu(); // Instantiate a Form object.
+            f3.ShowDialog(); // Show Form and          
+            this.Close(); // closes the current Form instance.
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }
