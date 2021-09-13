@@ -36,7 +36,6 @@ namespace Dorm_managment_system
             this.cboRooms = new System.Windows.Forms.ComboBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnShow = new System.Windows.Forms.Button();
             this.gbRequest = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.blUnitNo = new System.Windows.Forms.Label();
@@ -71,7 +70,7 @@ namespace Dorm_managment_system
             // btnAssign
             // 
             this.btnAssign.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAssign.Location = new System.Drawing.Point(656, 456);
+            this.btnAssign.Location = new System.Drawing.Point(667, 491);
             this.btnAssign.Name = "btnAssign";
             this.btnAssign.Size = new System.Drawing.Size(108, 34);
             this.btnAssign.TabIndex = 9;
@@ -82,7 +81,7 @@ namespace Dorm_managment_system
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClear.Location = new System.Drawing.Point(546, 455);
+            this.btnClear.Location = new System.Drawing.Point(546, 490);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(93, 35);
             this.btnClear.TabIndex = 10;
@@ -124,17 +123,6 @@ namespace Dorm_managment_system
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnShow
-            // 
-            this.btnShow.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnShow.Location = new System.Drawing.Point(639, 516);
-            this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(125, 36);
-            this.btnShow.TabIndex = 19;
-            this.btnShow.Text = "Show requests";
-            this.btnShow.UseVisualStyleBackColor = true;
-            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // gbRequest
             // 
@@ -195,7 +183,6 @@ namespace Dorm_managment_system
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(793, 577);
             this.Controls.Add(this.txtBookID);
-            this.Controls.Add(this.btnShow);
             this.Controls.Add(this.lblBookID);
             this.Controls.Add(this.blUnitNo);
             this.Controls.Add(this.gbRequest);
@@ -228,7 +215,6 @@ namespace Dorm_managment_system
         private System.Windows.Forms.ComboBox cboRooms;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.GroupBox gbRequest;
         private System.Windows.Forms.Label blUnitNo;
         private System.Windows.Forms.Label lblBookID;

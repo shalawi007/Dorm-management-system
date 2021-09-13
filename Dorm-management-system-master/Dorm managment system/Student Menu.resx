@@ -99,6 +99,9 @@
   <data name="btnstufeed.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
+  <data name="btnstufeed.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btnstufeed.Location" type="System.Drawing.Point, System.Drawing">
     <value>313, 143</value>
   </data>
@@ -109,7 +112,7 @@
     <value>234, 34</value>
   </data>
   <data name="btnstufeed.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="btnstufeed.Text" xml:space="preserve">
     <value>Feedback</value>
@@ -229,13 +232,13 @@
     <value>Segoe UI, 13.8pt, style=Bold</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 116</value>
+    <value>38, 139</value>
   </data>
   <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 28</value>
+    <value>142, 37</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

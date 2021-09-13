@@ -54,7 +54,7 @@ namespace Dorm_managment_system
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
-            this.label1.Location = new System.Drawing.Point(630, 54);
+            this.label1.Location = new System.Drawing.Point(647, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 15);
             this.label1.TabIndex = 0;
@@ -65,7 +65,7 @@ namespace Dorm_managment_system
             // 
             this.rdoBlockA.AutoSize = true;
             this.rdoBlockA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
-            this.rdoBlockA.Location = new System.Drawing.Point(630, 80);
+            this.rdoBlockA.Location = new System.Drawing.Point(647, 80);
             this.rdoBlockA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoBlockA.Name = "rdoBlockA";
             this.rdoBlockA.Size = new System.Drawing.Size(65, 19);
@@ -79,7 +79,7 @@ namespace Dorm_managment_system
             // 
             this.rdoBlockB.AutoSize = true;
             this.rdoBlockB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
-            this.rdoBlockB.Location = new System.Drawing.Point(630, 103);
+            this.rdoBlockB.Location = new System.Drawing.Point(648, 103);
             this.rdoBlockB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoBlockB.Name = "rdoBlockB";
             this.rdoBlockB.Size = new System.Drawing.Size(64, 19);

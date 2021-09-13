@@ -15,8 +15,18 @@ namespace Dorm_managment_system.Models
         String End_Date { get; set; }
         String Req_Block { get; set; }
         String Term_Reason { get; set; }
+        String ChangeBlock { get; set; }
 
-        public Booking(string book_ID, string std_ID, string room_ID, string start_Date, string end_Date, string req_Block, string term_Reason)
+        public Booking(
+            string book_ID, 
+            string std_ID, 
+            string room_ID, 
+            string start_Date, 
+            string end_Date,
+            string req_Block, 
+            string term_Reason,
+            string changeBlock
+            )
         {
             Book_ID = book_ID;
             Std_ID = std_ID;
@@ -25,6 +35,7 @@ namespace Dorm_managment_system.Models
             End_Date = end_Date;
             Req_Block = req_Block;
             Term_Reason = term_Reason;
+            ChangeBlock = changeBlock;
         }
 
         public static void requestBooking(
@@ -61,7 +72,8 @@ namespace Dorm_managment_system.Models
                     row["Start_Date"].ToString(),
                     row["End_Date"].ToString(),
                     row["Req_Block"].ToString(),
-                    row["Term_Reason"].ToString()
+                    row["Term_Reason"].ToString(),
+                    row["Changed Block"].ToString()
                         )
                     );
             }

@@ -28,7 +28,7 @@ namespace Dorm_managment_system
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            System.Windows.Forms.Application.ExitThread();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -50,10 +50,29 @@ namespace Dorm_managment_system
         {
 
         }
-
-        private void button2_Click_1(object sender, EventArgs e)
+              
+        private void btnstuaccreq_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.ExitThread();
+            Hide();
+            var menu = new Change_Room_Request();
+            menu.ShowDialog();
+            Close();
+        }
+
+        private void btnstutermacc_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var menu = new Termination_of_Accomodation();
+            menu.ShowDialog();
+            Close();
+        }
+
+        private void btnstufeed_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var menu = new Accomodation_Feedback();
+            menu.ShowDialog();
+            Close();
         }
     }
 }

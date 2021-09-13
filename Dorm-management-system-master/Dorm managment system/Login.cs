@@ -42,6 +42,7 @@ namespace Dorm_managment_system
         {
             var usernameText = textBox1.Text;
             var passwordText = textBox2.Text;
+
             Database dbConnection = new Database();
 
             DataSet ds = dbConnection.getData($"SELECT * from Student where Name = '{usernameText}' and Pass = '{passwordText}'");
@@ -96,6 +97,36 @@ namespace Dorm_managment_system
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            textBox2.UseSystemPasswordChar = true;
+
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBox2.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = true;
+            }
         }
     }
 }
