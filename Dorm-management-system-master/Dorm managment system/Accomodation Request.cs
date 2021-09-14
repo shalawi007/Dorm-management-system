@@ -17,15 +17,14 @@ namespace Dorm_managment_system
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn
- (
-      int nLeftRect,
-      int nTopRect,
-      int nRightRect,
-      int nBottomRect,
-      int nWidthEllipse,
-         int nHeightEllipse
-
-  );
+        (
+             int nLeftRect,
+             int nTopRect,
+             int nRightRect,
+             int nBottomRect,
+             int nWidthEllipse,
+             int nHeightEllipse
+         );
 
         public Accomodation_Request()
         {
@@ -60,7 +59,8 @@ namespace Dorm_managment_system
             radioPicked();
         }
 
-        private void radioPicked() {
+        private void radioPicked()
+        {
             lstFacilities.Items.Clear();
 
             if (rdoBlockA.Checked)
@@ -69,7 +69,8 @@ namespace Dorm_managment_system
                 lstFacilities.Items.Add("Swimming pool");
                 lstFacilities.Items.Add("Gym");
             }
-            else if(rdoBlockB.Checked) {
+            else if (rdoBlockB.Checked)
+            {
                 pickedBlock = "Block B";
                 lstFacilities.Items.Add("Walking Area");
                 lstFacilities.Items.Add("Big dorms");
@@ -81,7 +82,7 @@ namespace Dorm_managment_system
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             Booking.requestBooking(
-                StartDatePicker.Value.ToString("yyyy-MM-dd"),
+                 StartDatePicker.Value.ToString("yyyy-MM-dd"),
                  EndDatePicker.Value.ToString("yyyy-MM-dd"),
                  pickedBlock
                 );
@@ -114,7 +115,20 @@ namespace Dorm_managment_system
                 lstFacilities.Items.Add("Showers");
                 lstFacilities.Items.Add("Wifi");
             }
-            
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Student_Menu f3 = new Student_Menu(); // Instantiate a Form object.
+            f3.ShowDialog(); // Show Form and          
+            this.Close(); // closes the current Form instance.
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
         }
     }
 }

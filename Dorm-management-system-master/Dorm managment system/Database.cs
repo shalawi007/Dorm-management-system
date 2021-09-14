@@ -29,21 +29,37 @@ namespace Dorm_managment_system
             da.Fill(ds);
             return ds;
         }
-        public void setData(String query, String message) //Insert + delete + update data 
+        public void setData(String query) //Insert + delete + update data 
         {
-            SqlConnection con = connection;
+            SqlConnection con = getConnection();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
-            con.Open();
-            cmd.CommandText = query;
-            cmd.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show(message + "Success");
+            try
+            {
+                con.Open();
+                cmd.CommandText = query;
+                int icount = cmd.ExecuteNonQuery();
 
+                if (icount == 0)
+                    MessageBox.Show("Unable to Update Record", "Record Update Fail", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                else
+                    MessageBox.Show("Record Update Successful", "Record Updated",
+                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     public Database()
     {
         connection = getConnection();
+
     }
 }
 }
