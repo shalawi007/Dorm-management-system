@@ -66,5 +66,8 @@ namespace Dorm_managment_system.Models
             }
             return list;
         }
+
+
+
     }
 }

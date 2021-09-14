@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Data.SqlClient;
 
 namespace Dorm_managment_system
 {
@@ -24,7 +25,7 @@ namespace Dorm_managment_system
          int nHeightEllipse
 
   );
-
+        Booking2 booking;
         public Termination_of_Accomodation()
         {
             InitializeComponent();
@@ -33,6 +34,15 @@ namespace Dorm_managment_system
 
         private void Termination_of_Accomodation_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            booking = new Booking2(txtStudentID.Text, txtReason.Text);
+            txtStudentID.Text = booking.StudentID;
+            txtReason.Text = booking.Reason;
+            booking.studentterminate();
 
         }
     }
