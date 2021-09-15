@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Data.SqlClient;
 
 namespace Dorm_managment_system
 {
@@ -24,7 +25,7 @@ namespace Dorm_managment_system
          int nHeightEllipse
 
   );
-
+        
         public Termination_of_Accomodation()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace Dorm_managment_system
 
         private void Termination_of_Accomodation_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
