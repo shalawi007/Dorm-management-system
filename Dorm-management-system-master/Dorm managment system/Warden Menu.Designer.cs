@@ -192,6 +192,7 @@ namespace Dorm_managment_system
             this.btnwarroomreq.TabIndex = 2;
             this.btnwarroomreq.Text = "Change room requests";
             this.btnwarroomreq.UseVisualStyleBackColor = false;
+            this.btnwarroomreq.Click += new System.EventHandler(this.btnwarroomreq_Click);
             // 
             // btnaccreport
             // 
@@ -207,6 +208,7 @@ namespace Dorm_managment_system
             this.btnaccreport.TabIndex = 0;
             this.btnaccreport.Text = "Generate Report";
             this.btnaccreport.UseVisualStyleBackColor = false;
+            this.btnaccreport.Click += new System.EventHandler(this.btnaccreport_Click);
             // 
             // btnwarfeed
             // 
@@ -222,6 +224,7 @@ namespace Dorm_managment_system
             this.btnwarfeed.TabIndex = 0;
             this.btnwarfeed.Text = "Review Feedback";
             this.btnwarfeed.UseVisualStyleBackColor = false;
+            this.btnwarfeed.Click += new System.EventHandler(this.btnwarfeed_Click);
             // 
             // btnssignacc
             // 
@@ -253,6 +256,7 @@ namespace Dorm_managment_system
             this.btnwartermacc.TabIndex = 3;
             this.btnwartermacc.Text = "Terminate requests";
             this.btnwartermacc.UseVisualStyleBackColor = false;
+            this.btnwartermacc.Click += new System.EventHandler(this.btnwartermacc_Click);
             // 
             // Warden_Menu
             // 

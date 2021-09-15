@@ -50,5 +50,34 @@ namespace Dorm_managment_system
         {
             System.Windows.Forms.Application.ExitThread();
         }
+
+        private void btnwarroomreq_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var menu = new ChangeRoom();
+            menu.ShowDialog();
+            Close();
+        }
+
+        private void btnwartermacc_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var menu = new Terminate();
+            menu.ShowDialog();
+            Close();
+        }
+
+        private void btnwarfeed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnaccreport_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var menu = new Monthly_Report();
+            menu.ShowDialog();
+            Close();
+        }
     }
 }

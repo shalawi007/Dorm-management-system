@@ -21,7 +21,7 @@ namespace Dorm_managment_system
 
         private void Roomasign_Load(object sender, EventArgs e)
         {
-
+            StyleDatagridview();
             query = "Select Book_ID,Std_ID,Start_Date,End_Date,Req_Block From Booking where Room_ID IS Null";
             DataSet ds = dbConnection.getData(query);
             dataGridView1.DataSource = ds.Tables[0];
@@ -43,7 +43,21 @@ namespace Dorm_managment_system
             ///listView1.Columns.Add("End Date", 100);
 
         }
-
+        void StyleDatagridview()
+        {
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dataGridView1.BackgroundColor = Color.FromArgb(30, 30, 30);
+            dataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;//optional
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("MS Reference Sans Serif", 10);
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(37, 37, 38);
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -68,39 +82,7 @@ namespace Dorm_managment_system
         {
 
         }
-
-        private void btnShow_Click(object sender, EventArgs e)
-        {
-            
-
-            //Add items in the listview
-            //string[] arr = new string[5];
-            ///ListViewItem itm;
-
-            
-
-            
-
-            ////foreach (var row in ds.Tables[0].Rows)
-            {
-                //Add first item
-
-                //arr[0] = "TP012345";
-                //arr[1] = "James Upper";
-                //arr[2] = "A";
-                //arr[3] = "1 Jul, 2021";
-                //arr[4] = "16 Dec, 2021";
-                //itm = new ListViewItem(arr);
-                //listView1.Items.Add(itm);
-            }
-
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Application.ExitThread();
-        }
-
+                
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -159,6 +141,11 @@ namespace Dorm_managment_system
             txtStudID.Clear();
             txtBookID.Clear();
             cboRooms.SelectedIndex = -1;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
         }
     }
 }
