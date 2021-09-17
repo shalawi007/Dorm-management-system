@@ -22,7 +22,7 @@ namespace Dorm_managment_system
         private void Terminate_Load(object sender, EventArgs e)
         {
 
-            query = "SELECT Book_ID, Std_ID, Term_Reason FROM Booking WHERE Term_Reason IS NOT NULL";
+            query = "SELECT Book_ID AS [Request Nr.], Room_ID AS [Room Nr.], Std_ID AS [Student ID], Term_Reason AS [Reason] FROM Booking WHERE Term_Reason IS NOT NULL";
             DataSet ds = dbconnection.getData(query);
             dataGridView1.DataSource = ds.Tables[0];
 
@@ -31,11 +31,15 @@ namespace Dorm_managment_system
 
         private void btnTerminate_Click(object sender, EventArgs e)
         {
-            if(txtBookID .Text != "")
+            if(txtBookID .Text != "" && txtRoomID.Text != "")
             {
                 String Book_ID = txtBookID.Text;
+                String Room_ID = txtRoomID.Text;
 
                 query = "UPDATE Booking SET Term_Reason = NULL WHERE Book_ID = ('" + Book_ID + "')";
+                dbconnection.setData(query);
+
+                query = "UPDATE Rooms SET Status = 'Vacant' WHERE ID = ('" + Room_ID + "') ";
                 dbconnection.setData(query);
             }
             else

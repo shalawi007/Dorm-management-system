@@ -41,13 +41,13 @@ namespace Dorm_managment_system
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtBookID.Text  != "" && txtStudentID.Text  != "" && txtReason.Text  != "")
+            if(txtRoomID.Text  != "" && txtStudentID.Text  != "" && txtReason.Text  != "")
             {
-                String Book_ID = txtBookID.Text;
+                String Room_ID = txtRoomID.Text;
                 String Std_ID = txtStudentID.Text;
                 String Term_Reason = txtReason.Text;
 
-                query = "UPDATE Booking SET Term_Reason = ('" + Term_Reason + "') WHERE Std_ID = ('" + Std_ID + "') AND Book_ID = ('" + Book_ID + "')";
+                query = "UPDATE Booking SET Term_Reason = ('" + Term_Reason + "') WHERE Std_ID = ('" + Std_ID + "') AND Room_ID = ('" + Room_ID + "')";
 
                 dbconnection.setData(query);
 
