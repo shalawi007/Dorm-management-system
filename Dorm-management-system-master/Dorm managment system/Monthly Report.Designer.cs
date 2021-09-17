@@ -32,7 +32,6 @@ namespace Dorm_managment_system
             this.btnExit = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.gbReport = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.lblReportA = new System.Windows.Forms.Label();
             this.lblReportB = new System.Windows.Forms.Label();
             this.btnShreportA = new System.Windows.Forms.Button();
@@ -40,15 +39,14 @@ namespace Dorm_managment_system
             this.chVacant = new System.Windows.Forms.CheckBox();
             this.chOccupied = new System.Windows.Forms.CheckBox();
             this.lblfilter = new System.Windows.Forms.Label();
-            this.gbReport.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.Location = new System.Drawing.Point(688, 528);
+            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btnExit.Location = new System.Drawing.Point(590, 458);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(111, 37);
+            this.btnExit.Size = new System.Drawing.Size(95, 32);
             this.btnExit.TabIndex = 48;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -56,10 +54,10 @@ namespace Dorm_managment_system
             // 
             // btnBack
             // 
-            this.btnBack.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBack.Location = new System.Drawing.Point(545, 528);
+            this.btnBack.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btnBack.Location = new System.Drawing.Point(467, 458);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(123, 37);
+            this.btnBack.Size = new System.Drawing.Size(105, 32);
             this.btnBack.TabIndex = 47;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -68,31 +66,21 @@ namespace Dorm_managment_system
             // gbReport
             // 
             this.gbReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(53)))));
-            this.gbReport.Controls.Add(this.listView1);
-            this.gbReport.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gbReport.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold);
             this.gbReport.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.gbReport.Location = new System.Drawing.Point(48, 170);
+            this.gbReport.Location = new System.Drawing.Point(41, 147);
             this.gbReport.Name = "gbReport";
-            this.gbReport.Size = new System.Drawing.Size(751, 337);
+            this.gbReport.Size = new System.Drawing.Size(644, 292);
             this.gbReport.TabIndex = 49;
             this.gbReport.TabStop = false;
             this.gbReport.Text = "Monthly Report :";
             // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(13, 28);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(718, 294);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // lblReportA
             // 
             this.lblReportA.AutoSize = true;
-            this.lblReportA.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblReportA.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblReportA.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblReportA.Location = new System.Drawing.Point(61, 34);
+            this.lblReportA.Location = new System.Drawing.Point(52, 29);
             this.lblReportA.Name = "lblReportA";
             this.lblReportA.Size = new System.Drawing.Size(239, 22);
             this.lblReportA.TabIndex = 50;
@@ -101,9 +89,9 @@ namespace Dorm_managment_system
             // lblReportB
             // 
             this.lblReportB.AutoSize = true;
-            this.lblReportB.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblReportB.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblReportB.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblReportB.Location = new System.Drawing.Point(61, 93);
+            this.lblReportB.Location = new System.Drawing.Point(52, 81);
             this.lblReportB.Name = "lblReportB";
             this.lblReportB.Size = new System.Drawing.Size(241, 22);
             this.lblReportB.TabIndex = 51;
@@ -111,10 +99,10 @@ namespace Dorm_managment_system
             // 
             // btnShreportA
             // 
-            this.btnShreportA.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnShreportA.Location = new System.Drawing.Point(357, 27);
+            this.btnShreportA.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.btnShreportA.Location = new System.Drawing.Point(306, 23);
             this.btnShreportA.Name = "btnShreportA";
-            this.btnShreportA.Size = new System.Drawing.Size(166, 37);
+            this.btnShreportA.Size = new System.Drawing.Size(142, 32);
             this.btnShreportA.TabIndex = 52;
             this.btnShreportA.Text = "Generate ";
             this.btnShreportA.UseVisualStyleBackColor = true;
@@ -122,11 +110,11 @@ namespace Dorm_managment_system
             // 
             // btnShreportB
             // 
-            this.btnShreportB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnShreportB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btnShreportB.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnShreportB.Location = new System.Drawing.Point(357, 86);
+            this.btnShreportB.Location = new System.Drawing.Point(306, 75);
             this.btnShreportB.Name = "btnShreportB";
-            this.btnShreportB.Size = new System.Drawing.Size(166, 37);
+            this.btnShreportB.Size = new System.Drawing.Size(142, 32);
             this.btnShreportB.TabIndex = 53;
             this.btnShreportB.Text = "Generate";
             this.btnShreportB.UseVisualStyleBackColor = true;
@@ -136,9 +124,9 @@ namespace Dorm_managment_system
             // 
             this.chVacant.AutoSize = true;
             this.chVacant.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.chVacant.Location = new System.Drawing.Point(731, 145);
+            this.chVacant.Location = new System.Drawing.Point(627, 126);
             this.chVacant.Name = "chVacant";
-            this.chVacant.Size = new System.Drawing.Size(61, 19);
+            this.chVacant.Size = new System.Drawing.Size(60, 17);
             this.chVacant.TabIndex = 56;
             this.chVacant.Text = "Vacant";
             this.chVacant.UseVisualStyleBackColor = true;
@@ -147,9 +135,9 @@ namespace Dorm_managment_system
             // 
             this.chOccupied.AutoSize = true;
             this.chOccupied.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.chOccupied.Location = new System.Drawing.Point(645, 145);
+            this.chOccupied.Location = new System.Drawing.Point(553, 126);
             this.chOccupied.Name = "chOccupied";
-            this.chOccupied.Size = new System.Drawing.Size(77, 19);
+            this.chOccupied.Size = new System.Drawing.Size(72, 17);
             this.chOccupied.TabIndex = 55;
             this.chOccupied.Text = "Occupied";
             this.chOccupied.UseVisualStyleBackColor = true;
@@ -157,9 +145,9 @@ namespace Dorm_managment_system
             // lblfilter
             // 
             this.lblfilter.AutoSize = true;
-            this.lblfilter.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblfilter.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.lblfilter.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblfilter.Location = new System.Drawing.Point(585, 143);
+            this.lblfilter.Location = new System.Drawing.Point(501, 124);
             this.lblfilter.Name = "lblfilter";
             this.lblfilter.Size = new System.Drawing.Size(45, 19);
             this.lblfilter.TabIndex = 54;
@@ -167,10 +155,10 @@ namespace Dorm_managment_system
             // 
             // Monthly_Report
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(830, 577);
+            this.ClientSize = new System.Drawing.Size(711, 500);
             this.Controls.Add(this.chVacant);
             this.Controls.Add(this.chOccupied);
             this.Controls.Add(this.lblfilter);
@@ -186,7 +174,6 @@ namespace Dorm_managment_system
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Monthly_Report";
             this.Load += new System.EventHandler(this.Monthly_Report_Load);
-            this.gbReport.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,7 +188,6 @@ namespace Dorm_managment_system
         private System.Windows.Forms.Label lblReportB;
         private System.Windows.Forms.Button btnShreportA;
         private System.Windows.Forms.Button btnShreportB;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.CheckBox chVacant;
         private System.Windows.Forms.CheckBox chOccupied;
         private System.Windows.Forms.Label lblfilter;
