@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetReport" targetNamespace="http://tempuri.org/DataSetReport.xsd" xmlns:mstns="http://tempuri.org/DataSetReport.xsd" xmlns="http://tempuri.org/DataSetReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Dorm_dbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Dorm_dbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Dorm_managment_system.Properties.Settings.GlobalReference.Default.Dorm_dbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Dorm_dbConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Room_ID" DataSetColumn="Room_ID" />
+              <Mapping SourceColumn="Std_ID" DataSetColumn="Std_ID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Start_Date" DataSetColumn="Start_Date" />
+              <Mapping SourceColumn="End_Date" DataSetColumn="End_Date" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="Block" DataSetColumn="Block" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Dorm_dbConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByA" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByA" GeneratorSourceName="FillByA" GetMethodModifier="Public" GetMethodName="GetDataByA" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByA" UserSourceName="FillByA">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'A')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Dorm_dbConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByAO" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByAO" GeneratorSourceName="FillByAO" GetMethodModifier="Public" GetMethodName="GetDataByAO" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByAO" UserSourceName="FillByAO">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'A') AND (Rooms.Status = 'Occupied')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Dorm_dbConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByAV" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByAV" GeneratorSourceName="FillByAV" GetMethodModifier="Public" GetMethodName="GetDataByAV" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByAV" UserSourceName="FillByAV">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'A') AND (Rooms.Status = 'Vacant')
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Dorm_dbConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByB" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByB" GeneratorSourceName="FillByB" GetMethodModifier="Public" GetMethodName="GetDataByB" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByB" UserSourceName="FillByB">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'B')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Dorm_dbConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByBO" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByBO" GeneratorSourceName="FillByBO" GetMethodModifier="Public" GetMethodName="GetDataByBO" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByBO" UserSourceName="FillByBO">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'B') AND (Rooms.Status = 'Occupied')
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Dorm_dbConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByBV" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByBV" GeneratorSourceName="FillByBV" GetMethodModifier="Public" GetMethodName="GetDataByBV" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByBV" UserSourceName="FillByBV">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'B') AND (Rooms.Status = 'Vacant')
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetReport" msprop:Generator_UserDSName="DataSetReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Room_ID" msprop:Generator_ColumnVarNameInTable="columnRoom_ID" msprop:Generator_ColumnPropNameInRow="Room_ID" msprop:Generator_ColumnPropNameInTable="Room_IDColumn" msprop:Generator_UserColumnName="Room_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Std_ID" msprop:Generator_ColumnVarNameInTable="columnStd_ID" msprop:Generator_ColumnPropNameInRow="Std_ID" msprop:Generator_ColumnPropNameInTable="Std_IDColumn" msprop:Generator_UserColumnName="Std_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Start_Date" msprop:Generator_ColumnVarNameInTable="columnStart_Date" msprop:Generator_ColumnPropNameInRow="Start_Date" msprop:Generator_ColumnPropNameInTable="Start_DateColumn" msprop:Generator_UserColumnName="Start_Date" type="xs:dateTime" />
+              <xs:element name="End_Date" msprop:Generator_ColumnVarNameInTable="columnEnd_Date" msprop:Generator_ColumnPropNameInRow="End_Date" msprop:Generator_ColumnPropNameInTable="End_DateColumn" msprop:Generator_UserColumnName="End_Date" type="xs:dateTime" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Block" msprop:Generator_ColumnVarNameInTable="columnBlock" msprop:Generator_ColumnPropNameInRow="Block" msprop:Generator_ColumnPropNameInTable="BlockColumn" msprop:Generator_UserColumnName="Block">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -128,5 +128,11 @@ namespace Dorm_managment_system
                 textBox2.UseSystemPasswordChar = true;
             }
         }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            textBox2.UseSystemPasswordChar = true;
+        }
     }
 }

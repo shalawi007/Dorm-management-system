@@ -68,10 +68,7 @@ namespace Dorm_managment_system
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Student_Menu f = new Student_Menu();
-            f.ShowDialog();
-            this.Close();
+            System.Windows.Forms.Application.ExitThread();
         }
     }
 }
