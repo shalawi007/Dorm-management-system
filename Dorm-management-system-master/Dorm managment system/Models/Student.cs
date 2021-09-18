@@ -20,10 +20,7 @@ namespace Dorm_managment_system
         {
             Database dbConnection = new Database();
             DataSet ds = dbConnection.getData("SELECT * from Student where ID = '" + id + "'");
-
-            //  for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-            //    txtCustomerID.Text = ds.Tables[0].Rows[i]["ID"].ToString();
-
+                        
             DataRow firstRow = ds.Tables[0].Rows[0];
             if (ds.Tables[0].Rows[0] != null)
             {
