@@ -17,7 +17,7 @@ namespace Dorm_managment_system
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Termination_of_Accomodation ());
+            Application.Run(new Review_Feedback ());
         }
     }
 }

@@ -52,7 +52,7 @@ namespace Dorm_managment_system
             this.lblStudID.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lblStudID.Location = new System.Drawing.Point(33, 493);
             this.lblStudID.Name = "lblStudID";
-            this.lblStudID.Size = new System.Drawing.Size(113, 22);
+            this.lblStudID.Size = new System.Drawing.Size(143, 26);
             this.lblStudID.TabIndex = 1;
             this.lblStudID.Text = "Student_ID :";
             // 
@@ -62,7 +62,7 @@ namespace Dorm_managment_system
             this.txtStudID.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtStudID.Location = new System.Drawing.Point(173, 490);
             this.txtStudID.Name = "txtStudID";
-            this.txtStudID.Size = new System.Drawing.Size(196, 25);
+            this.txtStudID.Size = new System.Drawing.Size(196, 29);
             this.txtStudID.TabIndex = 3;
             this.txtStudID.Text = "Insert TP number here...";
             this.txtStudID.Click += new System.EventHandler(this.txtStudID_Click);
@@ -97,7 +97,7 @@ namespace Dorm_managment_system
             this.cboRooms.FormattingEnabled = true;
             this.cboRooms.Location = new System.Drawing.Point(544, 436);
             this.cboRooms.Name = "cboRooms";
-            this.cboRooms.Size = new System.Drawing.Size(148, 25);
+            this.cboRooms.Size = new System.Drawing.Size(148, 29);
             this.cboRooms.TabIndex = 11;
             this.cboRooms.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.cboRooms.Click += new System.EventHandler(this.cboRooms_Click);
@@ -122,10 +122,11 @@ namespace Dorm_managment_system
             this.gbRequest.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.gbRequest.Location = new System.Drawing.Point(33, 50);
             this.gbRequest.Name = "gbRequest";
-            this.gbRequest.Size = new System.Drawing.Size(684, 345);
+            this.gbRequest.Size = new System.Drawing.Size(684, 350);
             this.gbRequest.TabIndex = 20;
             this.gbRequest.TabStop = false;
             this.gbRequest.Text = "Students Requests:";
+            this.gbRequest.Enter += new System.EventHandler(this.gbRequest_Enter);
             // 
             // dataGridView1
             // 
@@ -134,9 +135,11 @@ namespace Dorm_managment_system
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(13, 19);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(656, 298);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // blUnitNo
             // 
@@ -145,7 +148,7 @@ namespace Dorm_managment_system
             this.blUnitNo.ForeColor = System.Drawing.SystemColors.Highlight;
             this.blUnitNo.Location = new System.Drawing.Point(396, 436);
             this.blUnitNo.Name = "blUnitNo";
-            this.blUnitNo.Size = new System.Drawing.Size(142, 22);
+            this.blUnitNo.Size = new System.Drawing.Size(181, 26);
             this.blUnitNo.TabIndex = 21;
             this.blUnitNo.Text = "Avaliable Units :";
             // 
@@ -156,7 +159,7 @@ namespace Dorm_managment_system
             this.lblBookID.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lblBookID.Location = new System.Drawing.Point(33, 439);
             this.lblBookID.Name = "lblBookID";
-            this.lblBookID.Size = new System.Drawing.Size(115, 22);
+            this.lblBookID.Size = new System.Drawing.Size(143, 26);
             this.lblBookID.TabIndex = 22;
             this.lblBookID.Text = "Booking ID :";
             // 
@@ -164,8 +167,9 @@ namespace Dorm_managment_system
             // 
             this.txtBookID.Location = new System.Drawing.Point(173, 436);
             this.txtBookID.Name = "txtBookID";
-            this.txtBookID.Size = new System.Drawing.Size(196, 29);
+            this.txtBookID.Size = new System.Drawing.Size(196, 34);
             this.txtBookID.TabIndex = 24;
+            this.txtBookID.TextChanged += new System.EventHandler(this.txtBookID_TextChanged);
             // 
             // btnExit
             // 
@@ -184,7 +188,7 @@ namespace Dorm_managment_system
             // 
             // Roomassign
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(750, 650);

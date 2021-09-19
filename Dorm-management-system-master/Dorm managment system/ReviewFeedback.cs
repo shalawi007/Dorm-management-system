@@ -10,6 +10,8 @@ namespace Dorm_managment_system
 {
     public partial class Review_Feedback : Form
     {
+        Database dbConnection = new Database();
+        String query;
         public Review_Feedback()
         {
             InitializeComponent();
@@ -26,39 +28,10 @@ namespace Dorm_managment_system
         }
         private void ReviewFeedback_Load(object sender, EventArgs e)
         {
-            listView1.View = View.Details;
-            listView1.GridLines = true;
-            listView1.FullRowSelect = true;
-            //Add column header
-            listView1.Columns.Add("Student_ID", 100);
-            listView1.Columns.Add("Student name", 100);
-            listView1.Columns.Add("Requested Block", 100);
-            listView1.Columns.Add("Present Unit", 100);
-            listView1.Columns.Add("Start Date", 100);
-            listView1.Columns.Add("End Date", 100);
-            //Add items in the listview
-            string[] arr = new string[6];
-            ListViewItem itm;
-
-            //Add first item
-            arr[0] = "TP012345";
-            arr[1] = "James Upper";
-            arr[2] = "A";
-            arr[3] = "A-01-01";
-            arr[4] = "1 Jul, 2021";
-            arr[5] = "16 Dec, 2021";
-            itm = new ListViewItem(arr);
-            listView1.Items.Add(itm);
-
-            //Add second item
-            arr[0] = "TP023466";
-            arr[1] = "Reza Ali";
-            arr[2] = "B";
-            arr[3] = "B-02-02";
-            arr[4] = "20 Aug, 2021";
-            arr[5] = "2 Jan, 2022";
-            itm = new ListViewItem(arr);
-            listView1.Items.Add(itm);
+            StyleDatagridview();
+            query = "Select Feedback_ID, Description, Student_ID, Room_ID, where Req_Status IS Null";
+            DataSet ds = dbConnection.getData(query);
+            dataGridView1.DataSource = ds.Tables[0];
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -75,6 +48,16 @@ namespace Dorm_managment_system
         {
             Warden_Menu Check = new Warden_Menu();
             Check.Show();
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
 
         }
     }

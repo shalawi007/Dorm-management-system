@@ -41,14 +41,6 @@ namespace Dorm_managment_system
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -60,11 +52,13 @@ namespace Dorm_managment_system
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -198,52 +192,6 @@ namespace Dorm_managment_system
             this.button4.Text = "Completed";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(15, 29);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(795, 228);
-            this.listView1.TabIndex = 16;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Student_ID";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Student_Name";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Present_Unit";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Date";
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Feedback";
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Feedback Description";
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Status";
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(221, 317);
@@ -330,9 +278,9 @@ namespace Dorm_managment_system
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.listView1);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.label6);
@@ -348,6 +296,7 @@ namespace Dorm_managment_system
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(831, 673);
             this.panel3.TabIndex = 10;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label6
             // 
@@ -371,6 +320,16 @@ namespace Dorm_managment_system
             this.label5.TabIndex = 13;
             this.label5.Text = "Update Feedback status";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(36, 19);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 29;
+            this.dataGridView1.Size = new System.Drawing.Size(774, 265);
+            this.dataGridView1.TabIndex = 18;
+            // 
             // Review_Feedback
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -392,6 +351,7 @@ namespace Dorm_managment_system
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -409,7 +369,6 @@ namespace Dorm_managment_system
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
@@ -421,12 +380,6 @@ namespace Dorm_managment_system
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
