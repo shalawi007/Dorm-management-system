@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -10,88 +11,23 @@ namespace Dorm_managment_system
 {
     public partial class Monthly_Report : Form
     {
+        
+        
         public Monthly_Report()
         {
             InitializeComponent();
+            cboBlock.Items.Add("Block A");
+            cboBlock.Items.Add("Block B");
         }
 
         private void Monthly_Report_Load(object sender, EventArgs e)
         {
-            listView1.View = View.Details;
-            listView1.GridLines = true;
-            listView1.FullRowSelect = true;
+
+            // TODO: This line of code loads data into the 'DataSetReport.DataTable1' table. You can move, or remove it, as needed.
+            //this.DataTable1TableAdapter.Fill(this.DataSetReport.DataTable1);
+            //this.reportViewer1.RefreshReport();
         }
-
-        private void btnShreportA_Click(object sender, EventArgs e)
-        {
-            listView1.Clear();
-            //Add column header
-            listView1.Columns.Add("Unit Number", 100);
-            listView1.Columns.Add("Student_ID", 100);
-            listView1.Columns.Add("Student Name", 100);
-            listView1.Columns.Add("Start Date", 100);
-            listView1.Columns.Add("End Date", 100);
-            listView1.Columns.Add("Room status", 100);
-            //Add items in the listview
-            string[] arr = new string[6];
-            ListViewItem itm;
-
-            //Add first item
-            arr[0] = "A-01-01";
-            arr[1] = "TP012345";
-            arr[2] = "James Upper";
-            arr[3] = "1 Jul, 2021";
-            arr[4] = "16 Dec, 2021";
-            arr[5] = "Occupied";
-            itm = new ListViewItem(arr);
-            listView1.Items.Add(itm);
-
-            //Add second item
-            arr[0] = "A-01-02";
-            arr[1] = "TP023466";
-            arr[2] = "Cena John";
-            arr[3] = "20 Mar, 2021";
-            arr[4] = "2 Jul, 2021";
-            arr[5] = "Vacant";
-            itm = new ListViewItem(arr);
-            listView1.Items.Add(itm);
-        }
-
-        private void btnShreportB_Click(object sender, EventArgs e)
-        {
-            listView1.Clear();
-            //Add column header
-            listView1.Columns.Add("Unit Number", 100);
-            listView1.Columns.Add("Student_ID", 100);
-            listView1.Columns.Add("Student Name", 100);
-            listView1.Columns.Add("Start Date", 100);
-            listView1.Columns.Add("End Date", 100);
-            listView1.Columns.Add("Room status", 100);
-            //Add items in the listview
-            string[] arr = new string[6];
-            ListViewItem itm;
-
-            //Add first item
-            arr[0] = "B-04-01";
-            arr[1] = "TP023456";
-            arr[2] = "Max Schuhmacher";
-            arr[3] = "1 Jul, 2021";
-            arr[4] = "16 Dec, 2021";
-            arr[5] = "Occupied";
-            itm = new ListViewItem(arr);
-            listView1.Items.Add(itm);
-
-            //Add second item
-            arr[0] = "B-01-02";
-            arr[1] = "TP023466";
-            arr[2] = "Peter Neuer";
-            arr[3] = "20 Mar, 2021";
-            arr[4] = "2 Jul, 2021";
-            arr[5] = "Vacant";
-            itm = new ListViewItem(arr);
-            listView1.Items.Add(itm);
-        }
-
+        
         private void btnExit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
@@ -104,6 +40,54 @@ namespace Dorm_managment_system
             f3.ShowDialog(); // Show Form and          
             this.Close(); // closes the current Form instance.
         }
+
+        private void btnreportA_Click(object sender, EventArgs e)
+        {
+            if (cboBlock.Text == "Block A")
+            {
+                this.DataTable1TableAdapter.FillByA(this.DataSetReport.DataTable1);
+                this.reportViewer1.RefreshReport();
+                if (chOccupied.Checked)
+                {
+                    this.DataTable1TableAdapter.FillByAO(this.DataSetReport.DataTable1);
+                    this.reportViewer1.RefreshReport();
+                }
+                else if (chVacant.Checked)
+                {
+                    this.DataTable1TableAdapter.FillByAV(this.DataSetReport.DataTable1);
+                    this.reportViewer1.RefreshReport();
+                }
+            }
+            else if (cboBlock.Text == "Block B")
+            {
+                this.DataTable1TableAdapter.FillByB(this.DataSetReport.DataTable1);
+                this.reportViewer1.RefreshReport();
+                if (chOccupied.Checked)
+                {
+                    this.DataTable1TableAdapter.FillByBO(this.DataSetReport.DataTable1);
+                    this.reportViewer1.RefreshReport();
+                }
+                else if (chVacant.Checked)
+                {
+                    this.DataTable1TableAdapter.FillByBV(this.DataSetReport.DataTable1);
+                    this.reportViewer1.RefreshReport();
+                }
+            }
+            
+
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Warden_Menu f3 = new Warden_Menu(); // Instantiate a Form object.
+            f3.ShowDialog(); // Show Form and          
+            this.Close(); // closes the current Form instance.
+        }
     }
+
+    
+    
     
 }

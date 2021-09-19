@@ -25,24 +25,8 @@ namespace Dorm_managment_system
             query = "Select Book_ID,Std_ID,Start_Date,End_Date,Req_Block From Booking where Room_ID IS Null";
             DataSet ds = dbConnection.getData(query);
             dataGridView1.DataSource = ds.Tables[0];
-
-            ///query = "Select ID From Rooms where Status = 'Vacant'";
-            ///DataSet ds = dbConnection.getData(query);
-            ///cboRooms.DataSource = ds;
-
-
-
-            /// listView1.View = View.Details;
-            ///listView1.GridLines = true;
-            /// listView1.FullRowSelect = true;
-            //Add column header
-            /// listView1.Columns.Add("Student_ID", 100);
-            ///  listView1.Columns.Add("Student name", 70);
-            ///  listView1.Columns.Add("Requested Block", 70);
-            /// listView1.Columns.Add("Start Date", 100);
-            ///listView1.Columns.Add("End Date", 100);
-
         }
+
         void StyleDatagridview()
         {
             dataGridView1.BorderStyle = BorderStyle.None;
@@ -58,6 +42,7 @@ namespace Dorm_managment_system
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(37, 37, 38);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
+
         private void label1_Click(object sender, EventArgs e)
         {
 

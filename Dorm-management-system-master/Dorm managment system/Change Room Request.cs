@@ -50,13 +50,23 @@ namespace Dorm_managment_system
                     //Submitting Change Room request to Block B
                     query = "UPDATE Booking SET [Changed Block] = 'Block A' WHERE Std_ID = ('" + Instances.values.loggedInStudent.ID + "') AND Room_ID = ('" + Rooms_no + "')";
                     dbConnection.setData(query);
+
+                    this.Hide();
+                    Student_Menu f = new Student_Menu();
+                    f.ShowDialog();
+                    this.Close();
                 }
                 else if (rdoBlockB.Checked)
                 {
                     //Submitting Change Room request to Block B
                     query = "UPDATE Booking SET [Changed Block] = 'Block B' WHERE Std_ID = ('" + Instances.values.loggedInStudent.ID + "') AND Room_ID = ('"+Rooms_no+"')";
                     dbConnection.setData(query);
-                   
+
+                    this.Hide();
+                    Student_Menu f = new Student_Menu();
+                    f.ShowDialog();
+                    this.Close();
+
                 }
              
             }

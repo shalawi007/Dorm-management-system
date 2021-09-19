@@ -25,7 +25,9 @@ namespace Dorm_managment_system
          int nHeightEllipse
 
   );
-        
+        Database dbconnection = new Database();
+        String query;
+
         public Termination_of_Accomodation()
         {
             InitializeComponent();
@@ -35,6 +37,38 @@ namespace Dorm_managment_system
         private void Termination_of_Accomodation_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(txtRoomID.Text  != "" && txtStudentID.Text  != "" && txtReason.Text  != "")
+            {
+                String Room_ID = txtRoomID.Text;
+                String Std_ID = txtStudentID.Text;
+                String Term_Reason = txtReason.Text;
+
+                query = "UPDATE Booking SET Term_Reason = ('" + Term_Reason + "') WHERE Std_ID = ('" + Std_ID + "') AND Room_ID = ('" + Room_ID + "')";
+
+                dbconnection.setData(query);
+
+                this.Hide();
+                Student_Menu f = new Student_Menu();
+                f.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Fill all fields correctly!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+
+            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
         }
     }
 }

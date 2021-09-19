@@ -63,6 +63,16 @@ namespace Dorm_managment_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_icon {
+            get {
+                object obj = ResourceManager.GetObject("back icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap be5fa2da61c9de53c480addc9727d965 {
             get {
                 object obj = ResourceManager.GetObject("be5fa2da61c9de53c480addc9727d965", resourceCulture);
@@ -76,6 +86,16 @@ namespace Dorm_managment_system.Properties {
         internal static System.Drawing.Bitmap de2ueog_1fd93ac3_6e23_4493_98a4_0cc84d3b21d3 {
             get {
                 object obj = ResourceManager.GetObject("de2ueog-1fd93ac3-6e23-4493-98a4-0cc84d3b21d3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap User_icon {
+            get {
+                object obj = ResourceManager.GetObject("User icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

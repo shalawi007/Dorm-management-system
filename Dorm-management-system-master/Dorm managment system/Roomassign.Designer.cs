@@ -48,29 +48,29 @@ namespace Dorm_managment_system
             // lblStudID
             // 
             this.lblStudID.AutoSize = true;
-            this.lblStudID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblStudID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblStudID.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lblStudID.Location = new System.Drawing.Point(33, 493);
             this.lblStudID.Name = "lblStudID";
-            this.lblStudID.Size = new System.Drawing.Size(143, 26);
+            this.lblStudID.Size = new System.Drawing.Size(113, 22);
             this.lblStudID.TabIndex = 1;
             this.lblStudID.Text = "Student_ID :";
             // 
             // txtStudID
             // 
-            this.txtStudID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtStudID.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtStudID.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtStudID.Location = new System.Drawing.Point(173, 490);
             this.txtStudID.Name = "txtStudID";
-            this.txtStudID.Size = new System.Drawing.Size(196, 29);
+            this.txtStudID.Size = new System.Drawing.Size(196, 25);
             this.txtStudID.TabIndex = 3;
             this.txtStudID.Text = "Insert TP number here...";
             this.txtStudID.Click += new System.EventHandler(this.txtStudID_Click);
             // 
             // btnAssign
             // 
-            this.btnAssign.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAssign.Location = new System.Drawing.Point(630, 539);
+            this.btnAssign.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btnAssign.Location = new System.Drawing.Point(597, 539);
             this.btnAssign.Name = "btnAssign";
             this.btnAssign.Size = new System.Drawing.Size(108, 34);
             this.btnAssign.TabIndex = 9;
@@ -80,7 +80,7 @@ namespace Dorm_managment_system
             // 
             // btnClear
             // 
-            this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.btnClear.Location = new System.Drawing.Point(483, 539);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(93, 35);
@@ -92,19 +92,19 @@ namespace Dorm_managment_system
             // cboRooms
             // 
             this.cboRooms.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboRooms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cboRooms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.cboRooms.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.cboRooms.FormattingEnabled = true;
             this.cboRooms.Location = new System.Drawing.Point(544, 436);
             this.cboRooms.Name = "cboRooms";
-            this.cboRooms.Size = new System.Drawing.Size(148, 29);
+            this.cboRooms.Size = new System.Drawing.Size(148, 25);
             this.cboRooms.TabIndex = 11;
             this.cboRooms.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.cboRooms.Click += new System.EventHandler(this.cboRooms_Click);
             // 
             // btnBack
             // 
-            this.btnBack.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.btnBack.Location = new System.Drawing.Point(25, 589);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(123, 37);
@@ -118,48 +118,46 @@ namespace Dorm_managment_system
             this.gbRequest.AutoSize = true;
             this.gbRequest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(53)))));
             this.gbRequest.Controls.Add(this.dataGridView1);
-            this.gbRequest.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gbRequest.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold);
             this.gbRequest.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.gbRequest.Location = new System.Drawing.Point(33, 50);
+            this.gbRequest.Location = new System.Drawing.Point(33, 38);
             this.gbRequest.Name = "gbRequest";
-            this.gbRequest.Size = new System.Drawing.Size(684, 350);
+            this.gbRequest.Size = new System.Drawing.Size(672, 357);
             this.gbRequest.TabIndex = 20;
             this.gbRequest.TabStop = false;
             this.gbRequest.Text = "Students Requests:";
-            this.gbRequest.Enter += new System.EventHandler(this.gbRequest_Enter);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 19);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 25);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(656, 298);
+            this.dataGridView1.Size = new System.Drawing.Size(666, 329);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // blUnitNo
             // 
             this.blUnitNo.AutoSize = true;
-            this.blUnitNo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.blUnitNo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.blUnitNo.ForeColor = System.Drawing.SystemColors.Highlight;
             this.blUnitNo.Location = new System.Drawing.Point(396, 436);
             this.blUnitNo.Name = "blUnitNo";
-            this.blUnitNo.Size = new System.Drawing.Size(181, 26);
+            this.blUnitNo.Size = new System.Drawing.Size(142, 22);
             this.blUnitNo.TabIndex = 21;
             this.blUnitNo.Text = "Avaliable Units :";
             // 
             // lblBookID
             // 
             this.lblBookID.AutoSize = true;
-            this.lblBookID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBookID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblBookID.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lblBookID.Location = new System.Drawing.Point(33, 439);
             this.lblBookID.Name = "lblBookID";
-            this.lblBookID.Size = new System.Drawing.Size(143, 26);
+            this.lblBookID.Size = new System.Drawing.Size(115, 22);
             this.lblBookID.TabIndex = 22;
             this.lblBookID.Text = "Booking ID :";
             // 
@@ -167,9 +165,8 @@ namespace Dorm_managment_system
             // 
             this.txtBookID.Location = new System.Drawing.Point(173, 436);
             this.txtBookID.Name = "txtBookID";
-            this.txtBookID.Size = new System.Drawing.Size(196, 34);
+            this.txtBookID.Size = new System.Drawing.Size(196, 29);
             this.txtBookID.TabIndex = 24;
-            this.txtBookID.TextChanged += new System.EventHandler(this.txtBookID_TextChanged);
             // 
             // btnExit
             // 
@@ -177,7 +174,7 @@ namespace Dorm_managment_system
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnExit.Location = new System.Drawing.Point(711, 11);
+            this.btnExit.Location = new System.Drawing.Point(702, 5);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(27, 28);
@@ -188,10 +185,10 @@ namespace Dorm_managment_system
             // 
             // Roomassign
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(750, 650);
+            this.ClientSize = new System.Drawing.Size(731, 650);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtBookID);
             this.Controls.Add(this.lblBookID);
@@ -203,7 +200,7 @@ namespace Dorm_managment_system
             this.Controls.Add(this.btnAssign);
             this.Controls.Add(this.txtStudID);
             this.Controls.Add(this.lblStudID);
-            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Roomassign";

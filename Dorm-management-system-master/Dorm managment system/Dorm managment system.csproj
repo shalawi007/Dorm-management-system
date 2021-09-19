@@ -2,25 +2,43 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <RootNamespace>Dorm_managment_system</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <None Remove="Report1.rdlc" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Datasetreport.Designer.cs">
+    <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms" Version="150.1449.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DataSetreport.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Datasetreport.xsd</DependentUpon>
+      <DependentUpon>DataSetreport.xsd</DependentUpon>
     </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -32,9 +50,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Datasetreport.xsd">
+    <None Update="DataSetreport.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Datasetreport.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSetreport.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

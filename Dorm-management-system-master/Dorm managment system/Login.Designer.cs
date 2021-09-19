@@ -56,7 +56,7 @@ namespace Dorm_managment_system
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 302);
+            this.panel1.Size = new System.Drawing.Size(159, 262);
             this.panel1.TabIndex = 3;
             // 
             // panel2
@@ -68,27 +68,27 @@ namespace Dorm_managment_system
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(186, 105);
+            this.panel2.Size = new System.Drawing.Size(159, 91);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.panel4.Location = new System.Drawing.Point(0, 98);
+            this.panel4.Location = new System.Drawing.Point(0, 85);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(186, 8);
+            this.panel4.Size = new System.Drawing.Size(159, 7);
             this.panel4.TabIndex = 9;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(66, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(57, 8);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 47);
+            this.pictureBox1.Size = new System.Drawing.Size(47, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -96,9 +96,9 @@ namespace Dorm_managment_system
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(26, 58);
+            this.label1.Location = new System.Drawing.Point(22, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 17);
             this.label1.TabIndex = 1;
@@ -107,14 +107,15 @@ namespace Dorm_managment_system
             // 
             // button1
             // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button1.Location = new System.Drawing.Point(242, 147);
+            this.button1.Location = new System.Drawing.Point(207, 123);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 32);
+            this.button1.Size = new System.Drawing.Size(70, 32);
             this.button1.TabIndex = 4;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
@@ -123,9 +124,9 @@ namespace Dorm_managment_system
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label3.Location = new System.Drawing.Point(191, 20);
+            this.label3.Location = new System.Drawing.Point(164, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 36);
             this.label3.TabIndex = 5;
@@ -135,12 +136,12 @@ namespace Dorm_managment_system
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.Location = new System.Drawing.Point(15, 22);
+            this.textBox1.Location = new System.Drawing.Point(13, 19);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 19);
+            this.textBox1.Size = new System.Drawing.Size(150, 19);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "Username";
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
@@ -150,15 +151,16 @@ namespace Dorm_managment_system
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.textBox2.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox2.Location = new System.Drawing.Point(13, 68);
+            this.textBox2.Location = new System.Drawing.Point(11, 59);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(177, 19);
+            this.textBox2.Size = new System.Drawing.Size(152, 19);
             this.textBox2.TabIndex = 7;
             this.textBox2.Text = "Password";
             this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
             // 
             // panel3
             // 
@@ -167,20 +169,20 @@ namespace Dorm_managment_system
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Location = new System.Drawing.Point(191, 103);
+            this.panel3.Location = new System.Drawing.Point(164, 89);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(337, 190);
+            this.panel3.Size = new System.Drawing.Size(289, 165);
             this.panel3.TabIndex = 8;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.checkBox1.Location = new System.Drawing.Point(13, 110);
+            this.checkBox1.Location = new System.Drawing.Point(11, 95);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(108, 19);
+            this.checkBox1.Size = new System.Drawing.Size(102, 17);
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -192,10 +194,10 @@ namespace Dorm_managment_system
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(511, 0);
+            this.button2.Location = new System.Drawing.Point(438, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(27, 22);
+            this.button2.Size = new System.Drawing.Size(23, 19);
             this.button2.TabIndex = 9;
             this.button2.Text = "X";
             this.button2.UseVisualStyleBackColor = true;
@@ -203,10 +205,10 @@ namespace Dorm_managment_system
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(537, 302);
+            this.ClientSize = new System.Drawing.Size(460, 262);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);

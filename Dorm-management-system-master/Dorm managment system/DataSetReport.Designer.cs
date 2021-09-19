@@ -20,9 +20,9 @@ namespace Dorm_managment_system {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Datasetreport")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DataSetReport")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Datasetreport : global::System.Data.DataSet {
+    public partial class DataSetReport : global::System.Data.DataSet {
         
         private DataTable1DataTable tableDataTable1;
         
@@ -30,7 +30,7 @@ namespace Dorm_managment_system {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public Datasetreport() {
+        public DataSetReport() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Dorm_managment_system {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected Datasetreport(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DataSetReport(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace Dorm_managment_system {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Datasetreport cln = ((Datasetreport)(base.Clone()));
+            DataSetReport cln = ((DataSetReport)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace Dorm_managment_system {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Datasetreport";
+            this.DataSetName = "DataSetReport";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Datasetreport.xsd";
+            this.Namespace = "http://tempuri.org/DataSetReport.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableDataTable1 = new DataTable1DataTable();
@@ -225,7 +225,7 @@ namespace Dorm_managment_system {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Datasetreport ds = new Datasetreport();
+            DataSetReport ds = new DataSetReport();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -279,17 +279,19 @@ namespace Dorm_managment_system {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
             
-            private global::System.Data.DataColumn columnPresent_Unit;
+            private global::System.Data.DataColumn columnRoom_ID;
             
-            private global::System.Data.DataColumn columnStudent_ID;
+            private global::System.Data.DataColumn columnStd_ID;
             
-            private global::System.Data.DataColumn columnStudent_Name;
+            private global::System.Data.DataColumn columnName;
             
             private global::System.Data.DataColumn columnStart_Date;
             
             private global::System.Data.DataColumn columnEnd_Date;
             
-            private global::System.Data.DataColumn columnRoom_Status;
+            private global::System.Data.DataColumn columnStatus;
+            
+            private global::System.Data.DataColumn columnBlock;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -326,25 +328,25 @@ namespace Dorm_managment_system {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Present_UnitColumn {
+            public global::System.Data.DataColumn Room_IDColumn {
                 get {
-                    return this.columnPresent_Unit;
+                    return this.columnRoom_ID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Student_IDColumn {
+            public global::System.Data.DataColumn Std_IDColumn {
                 get {
-                    return this.columnStudent_ID;
+                    return this.columnStd_ID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Student_NameColumn {
+            public global::System.Data.DataColumn NameColumn {
                 get {
-                    return this.columnStudent_Name;
+                    return this.columnName;
                 }
             }
             
@@ -366,9 +368,17 @@ namespace Dorm_managment_system {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Room_StatusColumn {
+            public global::System.Data.DataColumn StatusColumn {
                 get {
-                    return this.columnRoom_Status;
+                    return this.columnStatus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn BlockColumn {
+                get {
+                    return this.columnBlock;
                 }
             }
             
@@ -409,15 +419,16 @@ namespace Dorm_managment_system {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string Present_Unit, string Student_ID, string Student_Name, System.DateTime Start_Date, System.DateTime End_Date, string Room_Status) {
+            public DataTable1Row AddDataTable1Row(string Room_ID, string Std_ID, string Name, System.DateTime Start_Date, System.DateTime End_Date, string Status, string Block) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Present_Unit,
-                        Student_ID,
-                        Student_Name,
+                        Room_ID,
+                        Std_ID,
+                        Name,
                         Start_Date,
                         End_Date,
-                        Room_Status};
+                        Status,
+                        Block};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -440,38 +451,43 @@ namespace Dorm_managment_system {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnPresent_Unit = base.Columns["Present Unit"];
-                this.columnStudent_ID = base.Columns["Student ID"];
-                this.columnStudent_Name = base.Columns["Student Name"];
-                this.columnStart_Date = base.Columns["Start Date"];
-                this.columnEnd_Date = base.Columns["End Date"];
-                this.columnRoom_Status = base.Columns["Room Status"];
+                this.columnRoom_ID = base.Columns["Room_ID"];
+                this.columnStd_ID = base.Columns["Std_ID"];
+                this.columnName = base.Columns["Name"];
+                this.columnStart_Date = base.Columns["Start_Date"];
+                this.columnEnd_Date = base.Columns["End_Date"];
+                this.columnStatus = base.Columns["Status"];
+                this.columnBlock = base.Columns["Block"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnPresent_Unit = new global::System.Data.DataColumn("Present Unit", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPresent_Unit);
-                this.columnStudent_ID = new global::System.Data.DataColumn("Student ID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStudent_ID);
-                this.columnStudent_Name = new global::System.Data.DataColumn("Student Name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStudent_Name);
-                this.columnStart_Date = new global::System.Data.DataColumn("Start Date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                this.columnRoom_ID = new global::System.Data.DataColumn("Room_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRoom_ID);
+                this.columnStd_ID = new global::System.Data.DataColumn("Std_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStd_ID);
+                this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnName);
+                this.columnStart_Date = new global::System.Data.DataColumn("Start_Date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnStart_Date);
-                this.columnEnd_Date = new global::System.Data.DataColumn("End Date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                this.columnEnd_Date = new global::System.Data.DataColumn("End_Date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEnd_Date);
-                this.columnRoom_Status = new global::System.Data.DataColumn("Room Status", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRoom_Status);
-                this.columnPresent_Unit.MaxLength = 8;
-                this.columnStudent_ID.AllowDBNull = false;
-                this.columnStudent_ID.MaxLength = 8;
-                this.columnStudent_Name.AllowDBNull = false;
-                this.columnStudent_Name.MaxLength = 50;
+                this.columnStatus = new global::System.Data.DataColumn("Status", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStatus);
+                this.columnBlock = new global::System.Data.DataColumn("Block", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBlock);
+                this.columnRoom_ID.MaxLength = 8;
+                this.columnStd_ID.AllowDBNull = false;
+                this.columnStd_ID.MaxLength = 8;
+                this.columnName.AllowDBNull = false;
+                this.columnName.MaxLength = 50;
                 this.columnStart_Date.AllowDBNull = false;
                 this.columnEnd_Date.AllowDBNull = false;
-                this.columnRoom_Status.AllowDBNull = false;
-                this.columnRoom_Status.MaxLength = 50;
+                this.columnStatus.AllowDBNull = false;
+                this.columnStatus.MaxLength = 50;
+                this.columnBlock.AllowDBNull = false;
+                this.columnBlock.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -539,7 +555,7 @@ namespace Dorm_managment_system {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Datasetreport ds = new Datasetreport();
+                DataSetReport ds = new DataSetReport();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -614,39 +630,39 @@ namespace Dorm_managment_system {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Present_Unit {
+            public string Room_ID {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.Present_UnitColumn]));
+                        return ((string)(this[this.tableDataTable1.Room_IDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Present Unit\' in table \'DataTable1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Room_ID\' in table \'DataTable1\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.Present_UnitColumn] = value;
+                    this[this.tableDataTable1.Room_IDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Student_ID {
+            public string Std_ID {
                 get {
-                    return ((string)(this[this.tableDataTable1.Student_IDColumn]));
+                    return ((string)(this[this.tableDataTable1.Std_IDColumn]));
                 }
                 set {
-                    this[this.tableDataTable1.Student_IDColumn] = value;
+                    this[this.tableDataTable1.Std_IDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Student_Name {
+            public string Name {
                 get {
-                    return ((string)(this[this.tableDataTable1.Student_NameColumn]));
+                    return ((string)(this[this.tableDataTable1.NameColumn]));
                 }
                 set {
-                    this[this.tableDataTable1.Student_NameColumn] = value;
+                    this[this.tableDataTable1.NameColumn] = value;
                 }
             }
             
@@ -674,25 +690,36 @@ namespace Dorm_managment_system {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Room_Status {
+            public string Status {
                 get {
-                    return ((string)(this[this.tableDataTable1.Room_StatusColumn]));
+                    return ((string)(this[this.tableDataTable1.StatusColumn]));
                 }
                 set {
-                    this[this.tableDataTable1.Room_StatusColumn] = value;
+                    this[this.tableDataTable1.StatusColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsPresent_UnitNull() {
-                return this.IsNull(this.tableDataTable1.Present_UnitColumn);
+            public string Block {
+                get {
+                    return ((string)(this[this.tableDataTable1.BlockColumn]));
+                }
+                set {
+                    this[this.tableDataTable1.BlockColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetPresent_UnitNull() {
-                this[this.tableDataTable1.Present_UnitColumn] = global::System.Convert.DBNull;
+            public bool IsRoom_IDNull() {
+                return this.IsNull(this.tableDataTable1.Room_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetRoom_IDNull() {
+                this[this.tableDataTable1.Room_IDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -731,7 +758,7 @@ namespace Dorm_managment_system {
         }
     }
 }
-namespace Dorm_managment_system.DatasetreportTableAdapters {
+namespace Dorm_managment_system.DataSetReportTableAdapters {
     
     
     /// <summary>
@@ -855,12 +882,13 @@ namespace Dorm_managment_system.DatasetreportTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "DataTable1";
-            tableMapping.ColumnMappings.Add("Present Unit", "Present Unit");
-            tableMapping.ColumnMappings.Add("Student ID", "Student ID");
-            tableMapping.ColumnMappings.Add("Student Name", "Student Name");
-            tableMapping.ColumnMappings.Add("Start Date", "Start Date");
-            tableMapping.ColumnMappings.Add("End Date", "End Date");
-            tableMapping.ColumnMappings.Add("Room Status", "Room Status");
+            tableMapping.ColumnMappings.Add("Room_ID", "Room_ID");
+            tableMapping.ColumnMappings.Add("Std_ID", "Std_ID");
+            tableMapping.ColumnMappings.Add("Name", "Name");
+            tableMapping.ColumnMappings.Add("Start_Date", "Start_Date");
+            tableMapping.ColumnMappings.Add("End_Date", "End_Date");
+            tableMapping.ColumnMappings.Add("Status", "Status");
+            tableMapping.ColumnMappings.Add("Block", "Block");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -868,28 +896,78 @@ namespace Dorm_managment_system.DatasetreportTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "Data Source=(localdb)\\ProjectsV13;Initial Catalog=\"Dorm db\";Integrated Security=T" +
-                "rue";
+            this._connection.ConnectionString = global::Dorm_managment_system.Properties.Settings.Default.Dorm_dbConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[7];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        Booking.Room_ID AS [Present Unit], Booking.Std_ID AS [Student ID], Student.Name AS [Student Name], Booking.Start_Date AS [Start Date], Booking.End_Date AS [End Date], Rooms.Status AS [Room Status]
-FROM            Booking INNER JOIN
-                         Rooms ON Booking.Room_ID = Rooms.ID INNER JOIN
-                         Student ON Booking.Std_ID = Student.ID";
+            this._commandCollection[0].CommandText = @"SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'A')";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'A') AND (Rooms.Status = 'Occupied')";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = @"SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'A') AND (Rooms.Status = 'Vacant')
+";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = @"SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'B')";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[5].Connection = this.Connection;
+            this._commandCollection[5].CommandText = @"SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'B') AND (Rooms.Status = 'Occupied')
+";
+            this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[6].Connection = this.Connection;
+            this._commandCollection[6].CommandText = @"SELECT        Booking.Room_ID, Booking.Std_ID, Student.Name, Booking.Start_Date, Booking.End_Date, Rooms.Status, Rooms.Block
+FROM            Student INNER JOIN
+                         Booking ON Student.ID = Booking.Std_ID INNER JOIN
+                         Rooms ON Booking.Room_ID = Rooms.ID
+WHERE        (Rooms.Block = 'B') AND (Rooms.Status = 'Vacant')
+";
+            this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Datasetreport.DataTable1DataTable dataTable) {
+        public virtual int Fill(DataSetReport.DataTable1DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -902,9 +980,153 @@ FROM            Booking INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Datasetreport.DataTable1DataTable GetReport() {
+        public virtual DataSetReport.DataTable1DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Datasetreport.DataTable1DataTable dataTable = new Datasetreport.DataTable1DataTable();
+            DataSetReport.DataTable1DataTable dataTable = new DataSetReport.DataTable1DataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByA(DataSetReport.DataTable1DataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetReport.DataTable1DataTable GetDataByA() {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            DataSetReport.DataTable1DataTable dataTable = new DataSetReport.DataTable1DataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByAO(DataSetReport.DataTable1DataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetReport.DataTable1DataTable GetDataByAO() {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            DataSetReport.DataTable1DataTable dataTable = new DataSetReport.DataTable1DataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByAV(DataSetReport.DataTable1DataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetReport.DataTable1DataTable GetDataByAV() {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            DataSetReport.DataTable1DataTable dataTable = new DataSetReport.DataTable1DataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByB(DataSetReport.DataTable1DataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[4];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetReport.DataTable1DataTable GetDataByB() {
+            this.Adapter.SelectCommand = this.CommandCollection[4];
+            DataSetReport.DataTable1DataTable dataTable = new DataSetReport.DataTable1DataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByBO(DataSetReport.DataTable1DataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[5];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetReport.DataTable1DataTable GetDataByBO() {
+            this.Adapter.SelectCommand = this.CommandCollection[5];
+            DataSetReport.DataTable1DataTable dataTable = new DataSetReport.DataTable1DataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByBV(DataSetReport.DataTable1DataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[6];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetReport.DataTable1DataTable GetDataByBV() {
+            this.Adapter.SelectCommand = this.CommandCollection[6];
+            DataSetReport.DataTable1DataTable dataTable = new DataSetReport.DataTable1DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -978,7 +1200,7 @@ FROM            Booking INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(Datasetreport dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DataSetReport dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -988,7 +1210,7 @@ FROM            Booking INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(Datasetreport dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DataSetReport dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -998,7 +1220,7 @@ FROM            Booking INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(Datasetreport dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DataSetReport dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1032,7 +1254,7 @@ FROM            Booking INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(Datasetreport dataSet) {
+        public virtual int UpdateAll(DataSetReport dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
