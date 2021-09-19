@@ -13,6 +13,9 @@ namespace Dorm_managment_system
         public Warden_Menu()
         {
             InitializeComponent();
+            if (Instances.values.loggedInWarden != null) {
+                label1.Text = Instances.values.loggedInWarden.Name;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,18 +38,46 @@ namespace Dorm_managment_system
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnssignacc_Click(object sender, EventArgs e)
         {
-            Warden_Menu Check = new Warden_Menu();
-            Check.Show();
+            Hide();
+            var menu = new Roomassign();
+            menu.ShowDialog();
+            Close();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void btnwarroomreq_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var menu = new ChangeRoom();
+            menu.ShowDialog();
+            Close();
+        }
+
+        private void btnwartermacc_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var menu = new Terminate();
+            menu.ShowDialog();
+            Close();
         }
 
         private void btnwarfeed_Click(object sender, EventArgs e)
         {
-            Review_Feedback Check = new Review_Feedback();
-            Check.Show();
 
+        }
+
+        private void btnaccreport_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var menu = new Monthly_Report();
+            menu.ShowDialog();
+            Close();
         }
     }
 }

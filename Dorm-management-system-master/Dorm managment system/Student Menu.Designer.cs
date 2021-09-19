@@ -66,7 +66,7 @@ namespace Dorm_managment_system
             this.btnstufeed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnstufeed.Name = "btnstufeed";
             this.btnstufeed.UseVisualStyleBackColor = false;
-            this.btnstufeed.Click += new System.EventHandler(this.button2_Click);
+            this.btnstufeed.Click += new System.EventHandler(this.btnstufeed_Click);
             // 
             // btnstuaccreq
             // 
@@ -75,6 +75,7 @@ namespace Dorm_managment_system
             this.btnstuaccreq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnstuaccreq.Name = "btnstuaccreq";
             this.btnstuaccreq.UseVisualStyleBackColor = false;
+            this.btnstuaccreq.Click += new System.EventHandler(this.btnstuaccreq_Click);
             // 
             // btnstutermacc
             // 
@@ -83,6 +84,7 @@ namespace Dorm_managment_system
             this.btnstutermacc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnstutermacc.Name = "btnstutermacc";
             this.btnstutermacc.UseVisualStyleBackColor = false;
+            this.btnstutermacc.Click += new System.EventHandler(this.btnstutermacc_Click);
             // 
             // lblstu
             // 
@@ -105,7 +107,6 @@ namespace Dorm_managment_system
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel2
             // 
@@ -113,6 +114,7 @@ namespace Dorm_managment_system
             this.panel2.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
@@ -152,7 +154,7 @@ namespace Dorm_managment_system
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Student_Menu
             // 

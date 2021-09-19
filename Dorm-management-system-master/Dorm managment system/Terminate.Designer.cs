@@ -81,7 +81,7 @@ namespace Dorm_managment_system
             this.txtStudID.Name = "txtStudID";
             this.txtStudID.Size = new System.Drawing.Size(196, 25);
             this.txtStudID.TabIndex = 40;
-            this.txtStudID.Text = "Insert TP number here...";
+            this.txtStudID.TextChanged += new System.EventHandler(this.txtStudID_TextChanged);
             // 
             // lblStudentID
             // 
@@ -125,6 +125,7 @@ namespace Dorm_managment_system
             this.btnBack.TabIndex = 45;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Terminate
             // 
@@ -141,6 +142,7 @@ namespace Dorm_managment_system
             this.Controls.Add(this.gbTerminate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Terminate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Terminate";
             this.Load += new System.EventHandler(this.Terminate_Load);
             this.gbTerminate.ResumeLayout(false);

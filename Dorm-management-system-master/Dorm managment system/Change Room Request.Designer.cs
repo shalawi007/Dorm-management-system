@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Dorm_managment_system
 {
     partial class Change_Room_Request
@@ -29,129 +31,177 @@ namespace Dorm_managment_system
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblStudentID = new System.Windows.Forms.Label();
             this.lblRoomnumb = new System.Windows.Forms.Label();
             this.lblBlocktransfer = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtRoomno = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnBlockA = new System.Windows.Forms.Button();
-            this.btnBlockB = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.rdoBlockB = new System.Windows.Forms.RadioButton();
+            this.rdoBlockA = new System.Windows.Forms.RadioButton();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // lblStudentID
-            // 
-            this.lblStudentID.AutoSize = true;
-            this.lblStudentID.Location = new System.Drawing.Point(51, 86);
-            this.lblStudentID.Name = "lblStudentID";
-            this.lblStudentID.Size = new System.Drawing.Size(86, 20);
-            this.lblStudentID.TabIndex = 0;
-            this.lblStudentID.Text = "Student ID :";
             // 
             // lblRoomnumb
             // 
             this.lblRoomnumb.AutoSize = true;
-            this.lblRoomnumb.Location = new System.Drawing.Point(51, 135);
+            this.lblRoomnumb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
+            this.lblRoomnumb.Location = new System.Drawing.Point(45, 81);
             this.lblRoomnumb.Name = "lblRoomnumb";
-            this.lblRoomnumb.Size = new System.Drawing.Size(132, 20);
+            this.lblRoomnumb.Size = new System.Drawing.Size(108, 15);
             this.lblRoomnumb.TabIndex = 1;
             this.lblRoomnumb.Text = "Current Room no. :";
             // 
             // lblBlocktransfer
             // 
             this.lblBlocktransfer.AutoSize = true;
-            this.lblBlocktransfer.Location = new System.Drawing.Point(426, 86);
+            this.lblBlocktransfer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
+            this.lblBlocktransfer.Location = new System.Drawing.Point(373, 62);
             this.lblBlocktransfer.Name = "lblBlocktransfer";
-            this.lblBlocktransfer.Size = new System.Drawing.Size(186, 20);
+            this.lblBlocktransfer.Size = new System.Drawing.Size(147, 15);
             this.lblBlocktransfer.TabIndex = 2;
             this.lblBlocktransfer.Text = "Select block to transfer to :";
             // 
-            // textBox1
+            // txtRoomno
             // 
-            this.textBox1.Location = new System.Drawing.Point(223, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(223, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 4;
+            this.txtRoomno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.txtRoomno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRoomno.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtRoomno.Location = new System.Drawing.Point(183, 81);
+            this.txtRoomno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRoomno.Name = "txtRoomno";
+            this.txtRoomno.Size = new System.Drawing.Size(110, 23);
+            this.txtRoomno.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 21);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label1.Location = new System.Drawing.Point(21, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 20);
+            this.label1.Size = new System.Drawing.Size(365, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Change Accomodation Room Request";
             // 
-            // btnBlockA
-            // 
-            this.btnBlockA.Location = new System.Drawing.Point(426, 130);
-            this.btnBlockA.Name = "btnBlockA";
-            this.btnBlockA.Size = new System.Drawing.Size(94, 29);
-            this.btnBlockA.TabIndex = 6;
-            this.btnBlockA.Text = "Block A";
-            this.btnBlockA.UseVisualStyleBackColor = true;
-            this.btnBlockA.Click += new System.EventHandler(this.btnBlockA_Click);
-            // 
-            // btnBlockB
-            // 
-            this.btnBlockB.Location = new System.Drawing.Point(567, 130);
-            this.btnBlockB.Name = "btnBlockB";
-            this.btnBlockB.Size = new System.Drawing.Size(94, 29);
-            this.btnBlockB.TabIndex = 7;
-            this.btnBlockB.Text = "Block B";
-            this.btnBlockB.UseVisualStyleBackColor = true;
-            // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(296, 253);
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSubmit.Location = new System.Drawing.Point(459, 175);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(107, 36);
+            this.btnSubmit.Size = new System.Drawing.Size(94, 27);
             this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // rdoBlockB
+            // 
+            this.rdoBlockB.AutoSize = true;
+            this.rdoBlockB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
+            this.rdoBlockB.Location = new System.Drawing.Point(373, 104);
+            this.rdoBlockB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoBlockB.Name = "rdoBlockB";
+            this.rdoBlockB.Size = new System.Drawing.Size(64, 19);
+            this.rdoBlockB.TabIndex = 10;
+            this.rdoBlockB.TabStop = true;
+            this.rdoBlockB.Text = "Block B";
+            this.rdoBlockB.UseVisualStyleBackColor = true;
+            // 
+            // rdoBlockA
+            // 
+            this.rdoBlockA.AutoSize = true;
+            this.rdoBlockA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
+            this.rdoBlockA.Location = new System.Drawing.Point(373, 81);
+            this.rdoBlockA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoBlockA.Name = "rdoBlockA";
+            this.rdoBlockA.Size = new System.Drawing.Size(65, 19);
+            this.rdoBlockA.TabIndex = 9;
+            this.rdoBlockA.TabStop = true;
+            this.rdoBlockA.Text = "Block A";
+            this.rdoBlockA.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(597, -1);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(27, 22);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnBack.Location = new System.Drawing.Point(45, 175);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(94, 27);
+            this.btnBack.TabIndex = 12;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Change_Room_Request
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(711, 323);
+            this.ClientSize = new System.Drawing.Size(622, 242);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.rdoBlockB);
+            this.Controls.Add(this.rdoBlockA);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.btnBlockB);
-            this.Controls.Add(this.btnBlockA);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRoomno);
             this.Controls.Add(this.lblBlocktransfer);
             this.Controls.Add(this.lblRoomnumb);
-            this.Controls.Add(this.lblStudentID);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Change_Room_Request";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change Room Request";
+            this.Load += new System.EventHandler(this.Change_Room_Request_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-        #endregion
+        private void btnBlockA_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
-        private System.Windows.Forms.Label lblStudentID;
+        #endregion
         private System.Windows.Forms.Label lblRoomnumb;
         private System.Windows.Forms.Label lblBlocktransfer;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtRoomno;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnBlockA;
-        private System.Windows.Forms.Button btnBlockB;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.RadioButton rdoBlockB;
+        private System.Windows.Forms.RadioButton rdoBlockA;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBack;
     }
 }
