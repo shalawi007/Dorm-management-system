@@ -132,5 +132,20 @@ namespace Dorm_managment_system
         {
             System.Windows.Forms.Application.ExitThread();
         }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gbRequest_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBookID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
