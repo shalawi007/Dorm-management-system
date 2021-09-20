@@ -14,7 +14,7 @@ namespace Dorm_managment_system
         protected SqlConnection getConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = (localdb)\\C:\\IOOP db;database=Dorm db;integrated security = True";
+            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\IOOP db\\Dorm db.mdf;Integrated Security=True;Connect Timeout=30";
             return con;
         }
         public DataSet getData(String query) //get data from db
