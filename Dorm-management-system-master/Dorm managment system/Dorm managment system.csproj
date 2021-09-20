@@ -30,11 +30,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>DataSetreport.xsd</DependentUpon>
     </Compile>
-    <Compile Update="Dorm_dbDataSet.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Dorm_dbDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -58,10 +53,6 @@
     <None Update="DataSetreport.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetreport.Designer.cs</LastGenOutput>
-    </None>
-    <None Update="Dorm_dbDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Dorm_dbDataSet.Designer.cs</LastGenOutput>
     </None>
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

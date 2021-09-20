@@ -17,7 +17,7 @@ namespace Dorm_managment_system
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Review_Feedback ());
+            Application.Run(new Login ());
         }
     }
 }

@@ -15,6 +15,8 @@ namespace Dorm_managment_system
         public Review_Feedback()
         {
             InitializeComponent();
+            combostatus.Items.Add("In Process");
+            combostatus.Items.Add("Completed");
         }
 
         private void lblstu_Click(object sender, EventArgs e)
@@ -26,14 +28,7 @@ namespace Dorm_managment_system
         {
             
         }
-        private void ReviewFeedback_Load(object sender, EventArgs e)
-        {
-            StyleDatagridview();
-            query = "Select Feedback_ID, Description, Student_ID, Room_ID, where Req_Status IS Null";
-            DataSet ds = dbConnection.getData(query);
-            dataGridView1.DataSource = ds.Tables[0];
-        }
-
+       
         void StyleDatagridview()
         {
             dataGridView1.BorderStyle = BorderStyle.None;
@@ -66,12 +61,7 @@ namespace Dorm_managment_system
             Check.Show();
 
         }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        
         private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
@@ -79,9 +69,10 @@ namespace Dorm_managment_system
 
         private void Review_Feedback_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dorm_dbDataSet.Feedback' table. You can move, or remove it, as needed.
-            this.feedbackTableAdapter.Fill(this.dorm_dbDataSet.Feedback);
-
+            StyleDatagridview();
+            query = "Select Feedback_ID,Student_ID, Room_ID,Feedback,Description,Req_Status AS [Status] FROM Feedback ";
+            DataSet ds = dbConnection.getData(query);
+            dataGridView1.DataSource = ds.Tables[0];
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -104,17 +95,17 @@ namespace Dorm_managment_system
 
         private void btnsubmit_Click(object sender, EventArgs e)
         {
-            if (txtstudentid.Text != "" && txtfeedbackid.Text != "" && cboFeedback.Text != "")
+            if (txtstudentid.Text != "" && txtfeedbackid.Text != "" && combostatus.Text != "" && txtdescrp.Text != "" )
             {
                 String Student_ID = txtstudentid.Text;
-                String Feedback_ID  = cboFeedback.Text;
+                String Feedback = txtfeedbackid.Text;
+                String Desc = txtdescrp.Text;
+                String Status  = combostatus.Text;
 
-                //Assign the room 
-                query = "UPDATE Feedback SET Description = ('" + Feedback_ID + "') WHERE Student_ID = ('" + Student_ID + "')";
+                //Inserting data about the Feedback  
+                query = "UPDATE Feedback SET Description = ('" + Desc + "'), Req_Status = ('" + Status + "') WHERE Feedback_ID = ('" + Feedback + "') AND Student_ID = ('" + Student_ID + "')";
                 dbConnection.setData(query);
-                ///Updating Room to occupied
-                query = "UPDATE Feedback SET Status = ('Occupied') WHERE ID = ('" + Feedback_ID + "')";
-                dbConnection.setData(query);
+               
                 Review_Feedback_Load(this, null);
 
 
@@ -141,6 +132,11 @@ namespace Dorm_managment_system
         private void combostatus_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtdescrp_Enter(object sender, EventArgs e)
+        {
+            txtdescrp.Clear();
         }
     }
     
