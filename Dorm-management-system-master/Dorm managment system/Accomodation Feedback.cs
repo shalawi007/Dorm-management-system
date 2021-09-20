@@ -40,5 +40,15 @@ namespace Dorm_managment_system
         {
             System.Windows.Forms.Application.ExitThread();
         }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

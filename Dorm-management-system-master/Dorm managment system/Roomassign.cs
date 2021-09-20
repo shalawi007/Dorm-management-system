@@ -147,5 +147,25 @@ namespace Dorm_managment_system
         {
 
         }
+
+        private void txtStudID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtStudID_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBookID_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
