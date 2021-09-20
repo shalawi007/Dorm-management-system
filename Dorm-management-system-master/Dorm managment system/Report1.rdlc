@@ -26,7 +26,7 @@
               <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.3125in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
@@ -35,7 +35,7 @@
               <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.08333in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -51,8 +51,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Room ID</Value>
-                              <Style />
+                              <Value>Unit Number</Value>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -81,8 +84,12 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Std ID</Value>
-                              <Style />
+                              <Value>Student ID</Value>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <FontSize>12pt</FontSize>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -94,6 +101,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>DimGray</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -112,7 +120,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Name</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -142,7 +153,11 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Start Date</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <FontSize>12pt</FontSize>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -154,6 +169,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>DimGray</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -172,7 +188,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>End Date</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -201,8 +220,12 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Status</Value>
-                              <Style />
+                              <Value>Room Status</Value>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <FontSize>12pt</FontSize>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -214,6 +237,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>DimGray</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -237,7 +261,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Room_ID.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Tw Cen MT</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -267,7 +294,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Std_ID.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Tw Cen MT</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -279,6 +309,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -297,7 +328,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Name.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Tw Cen MT</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -327,7 +361,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Start_Date.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Tw Cen MT</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -339,6 +376,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -357,7 +395,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!End_Date.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Tw Cen MT</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -387,7 +428,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Status.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Tw Cen MT</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -399,6 +443,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -433,14 +478,15 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>0.87375in</Top>
-        <Left>0.47792in</Left>
+        <Left>0.2175in</Left>
         <Height>0.5in</Height>
-        <Width>6in</Width>
+        <Width>6.39583in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
+          <FontFamily>Times New Roman</FontFamily>
         </Style>
       </Tablix>
       <Textbox Name="Textbox14">
@@ -487,7 +533,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>6.91542in</Width>
+  <Width>7.72792in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
