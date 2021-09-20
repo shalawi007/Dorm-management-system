@@ -50,13 +50,7 @@ namespace Dorm_managment_system
             this.btnsubmit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.feedbackIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.studentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reqStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.feedbackBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dorm_dbDataSet = new Dorm_managment_system.Dorm_dbDataSet();
             this.label5 = new System.Windows.Forms.Label();
             this.feedbackTableAdapter = new Dorm_managment_system.Dorm_dbDataSetTableAdapters.FeedbackTableAdapter();
             this.tableAdapterManager = new Dorm_managment_system.Dorm_dbDataSetTableAdapters.TableAdapterManager();
@@ -68,7 +62,6 @@ namespace Dorm_managment_system
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedbackBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dorm_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -302,12 +295,6 @@ namespace Dorm_managment_system
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.feedbackIDDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.studentIDDataGridViewTextBoxColumn,
-            this.reqStatusDataGridViewTextBoxColumn,
-            this.roomIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.feedbackBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(41, 12);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -317,57 +304,6 @@ namespace Dorm_managment_system
             this.dataGridView1.Size = new System.Drawing.Size(769, 212);
             this.dataGridView1.TabIndex = 18;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // feedbackIDDataGridViewTextBoxColumn
-            // 
-            this.feedbackIDDataGridViewTextBoxColumn.DataPropertyName = "Feedback_ID";
-            this.feedbackIDDataGridViewTextBoxColumn.HeaderText = "Feedback_ID";
-            this.feedbackIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.feedbackIDDataGridViewTextBoxColumn.Name = "feedbackIDDataGridViewTextBoxColumn";
-            this.feedbackIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.feedbackIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // studentIDDataGridViewTextBoxColumn
-            // 
-            this.studentIDDataGridViewTextBoxColumn.DataPropertyName = "Student_ID";
-            this.studentIDDataGridViewTextBoxColumn.HeaderText = "Student_ID";
-            this.studentIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.studentIDDataGridViewTextBoxColumn.Name = "studentIDDataGridViewTextBoxColumn";
-            this.studentIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // reqStatusDataGridViewTextBoxColumn
-            // 
-            this.reqStatusDataGridViewTextBoxColumn.DataPropertyName = "Req_Status";
-            this.reqStatusDataGridViewTextBoxColumn.HeaderText = "Req_Status";
-            this.reqStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.reqStatusDataGridViewTextBoxColumn.Name = "reqStatusDataGridViewTextBoxColumn";
-            this.reqStatusDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // roomIDDataGridViewTextBoxColumn
-            // 
-            this.roomIDDataGridViewTextBoxColumn.DataPropertyName = "Room_ID";
-            this.roomIDDataGridViewTextBoxColumn.HeaderText = "Room_ID";
-            this.roomIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.roomIDDataGridViewTextBoxColumn.Name = "roomIDDataGridViewTextBoxColumn";
-            this.roomIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // feedbackBindingSource
-            // 
-            this.feedbackBindingSource.DataMember = "Feedback";
-            this.feedbackBindingSource.DataSource = this.dorm_dbDataSet;
-            // 
-            // dorm_dbDataSet
-            // 
-            this.dorm_dbDataSet.DataSetName = "Dorm_dbDataSet";
-            this.dorm_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label5
             // 
@@ -432,7 +368,6 @@ namespace Dorm_managment_system
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedbackBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dorm_dbDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -459,15 +394,9 @@ namespace Dorm_managment_system
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private Dorm_dbDataSet dorm_dbDataSet;
         private System.Windows.Forms.BindingSource feedbackBindingSource;
         private Dorm_dbDataSetTableAdapters.FeedbackTableAdapter feedbackTableAdapter;
         private Dorm_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridViewTextBoxColumn feedbackIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn studentIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reqStatusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roomIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.ComboBox combostatus;
     }
 }
