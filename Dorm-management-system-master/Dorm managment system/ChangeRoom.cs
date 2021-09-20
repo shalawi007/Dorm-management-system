@@ -55,12 +55,12 @@ namespace Dorm_managment_system
             // 
             this.gbChroom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(53)))));
             this.gbChroom.Controls.Add(this.dataGridView1);
-            this.gbChroom.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gbChroom.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold);
             this.gbChroom.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.gbChroom.Location = new System.Drawing.Point(32, 29);
             this.gbChroom.Name = "gbChroom";
             this.gbChroom.Size = new System.Drawing.Size(682, 305);
-            this.gbChroom.TabIndex = 34;
+            this.gbChroom.TabIndex = 7;
             this.gbChroom.TabStop = false;
             this.gbChroom.Text = "Change Room Requests :";
             // 
@@ -76,112 +76,114 @@ namespace Dorm_managment_system
             // 
             // txtBookID
             // 
-            this.txtBookID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBookID.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtBookID.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtBookID.Location = new System.Drawing.Point(268, 354);
             this.txtBookID.Name = "txtBookID";
             this.txtBookID.Size = new System.Drawing.Size(196, 25);
-            this.txtBookID.TabIndex = 37;
+            this.txtBookID.TabIndex = 0;
             this.txtBookID.Text = "Insert Booking ID here...";
+            this.txtBookID.Click += new System.EventHandler(this.txtBookID_Click);
             // 
             // lblBookID
             // 
             this.lblBookID.AutoSize = true;
-            this.lblBookID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBookID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblBookID.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lblBookID.Location = new System.Drawing.Point(56, 357);
             this.lblBookID.Name = "lblBookID";
             this.lblBookID.Size = new System.Drawing.Size(115, 22);
-            this.lblBookID.TabIndex = 36;
+            this.lblBookID.TabIndex = 8;
             this.lblBookID.Text = "Booking ID :";
             // 
             // lblAproval
             // 
             this.lblAproval.AutoSize = true;
-            this.lblAproval.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAproval.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblAproval.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lblAproval.Location = new System.Drawing.Point(56, 394);
             this.lblAproval.Name = "lblAproval";
             this.lblAproval.Size = new System.Drawing.Size(272, 22);
-            this.lblAproval.TabIndex = 38;
+            this.lblAproval.TabIndex = 9;
             this.lblAproval.Text = "If approved fill required details :";
             // 
             // blUnitNo
             // 
             this.blUnitNo.AutoSize = true;
-            this.blUnitNo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.blUnitNo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.blUnitNo.ForeColor = System.Drawing.SystemColors.Highlight;
             this.blUnitNo.Location = new System.Drawing.Point(56, 480);
             this.blUnitNo.Name = "blUnitNo";
             this.blUnitNo.Size = new System.Drawing.Size(120, 22);
-            this.blUnitNo.TabIndex = 40;
+            this.blUnitNo.TabIndex = 11;
             this.blUnitNo.Text = "Unit Number:";
             // 
             // cboRooms
             // 
-            this.cboRooms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cboRooms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.cboRooms.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.cboRooms.FormattingEnabled = true;
             this.cboRooms.Location = new System.Drawing.Point(268, 477);
             this.cboRooms.Name = "cboRooms";
             this.cboRooms.Size = new System.Drawing.Size(196, 25);
-            this.cboRooms.TabIndex = 39;
+            this.cboRooms.TabIndex = 2;
             this.cboRooms.Text = "Pick an avaliable Unit...";
             this.cboRooms.SelectedIndexChanged += new System.EventHandler(this.cboRooms_SelectedIndexChanged);
             this.cboRooms.Click += new System.EventHandler(this.cboRooms_Click);
             // 
             // btnBack
             // 
-            this.btnBack.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.btnBack.Location = new System.Drawing.Point(32, 589);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(123, 37);
-            this.btnBack.TabIndex = 41;
+            this.btnBack.TabIndex = 5;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnApprove
             // 
-            this.btnApprove.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnApprove.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.btnApprove.Location = new System.Drawing.Point(617, 555);
             this.btnApprove.Name = "btnApprove";
             this.btnApprove.Size = new System.Drawing.Size(97, 37);
-            this.btnApprove.TabIndex = 44;
+            this.btnApprove.TabIndex = 3;
             this.btnApprove.Text = "Approve";
             this.btnApprove.UseVisualStyleBackColor = true;
             this.btnApprove.Click += new System.EventHandler(this.btnApprove_Click);
             // 
             // btnDecline
             // 
-            this.btnDecline.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDecline.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.btnDecline.Location = new System.Drawing.Point(479, 555);
             this.btnDecline.Name = "btnDecline";
             this.btnDecline.Size = new System.Drawing.Size(97, 37);
-            this.btnDecline.TabIndex = 43;
+            this.btnDecline.TabIndex = 4;
             this.btnDecline.Text = "Decline";
             this.btnDecline.UseVisualStyleBackColor = true;
             this.btnDecline.Click += new System.EventHandler(this.btnDecline_Click);
             // 
             // txtCurrentRoom
             // 
-            this.txtCurrentRoom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCurrentRoom.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtCurrentRoom.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtCurrentRoom.Location = new System.Drawing.Point(268, 428);
             this.txtCurrentRoom.Name = "txtCurrentRoom";
             this.txtCurrentRoom.Size = new System.Drawing.Size(196, 25);
-            this.txtCurrentRoom.TabIndex = 45;
+            this.txtCurrentRoom.TabIndex = 1;
             this.txtCurrentRoom.Text = "Insert Room Number here...";
+            this.txtCurrentRoom.Enter += new System.EventHandler(this.txtCurrentRoom_Enter);
             // 
             // lblcurroom
             // 
             this.lblcurroom.AutoSize = true;
-            this.lblcurroom.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblcurroom.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblcurroom.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lblcurroom.Location = new System.Drawing.Point(56, 428);
             this.lblcurroom.Name = "lblcurroom";
             this.lblcurroom.Size = new System.Drawing.Size(173, 22);
-            this.lblcurroom.TabIndex = 46;
+            this.lblcurroom.TabIndex = 10;
             this.lblcurroom.Text = "Current Room No. :";
             // 
             // button2
@@ -194,7 +196,7 @@ namespace Dorm_managment_system
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(27, 27);
-            this.button2.TabIndex = 47;
+            this.button2.TabIndex = 6;
             this.button2.Text = "X";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -229,7 +231,7 @@ namespace Dorm_managment_system
         private void ChangeRoom_Load(object sender, EventArgs e)
         {
             StyleDatagridview();
-            query = "SELECT Booking.Book_ID,Booking.Std_ID AS 'Student ID',Student.Name,Booking.Room_ID AS 'Present Unit',Booking.[Changed Block] AS 'Requested Block'FROM Booking INNER JOIN Student ON Booking.Std_ID = Student.ID WHERE Booking.[Changed Block] IS NOT NULL";
+            query = "SELECT Book_ID, Std_ID AS 'Student ID',Room_ID AS 'Current Room',[Changed Block] AS 'Requested Block'FROM Booking WHERE Booking.[Changed Block] IS NOT NULL";
             DataSet ds = dbConnection.getData(query);
             dataGridView1.DataSource = ds.Tables[0];
         }
@@ -279,7 +281,7 @@ namespace Dorm_managment_system
                 query = "UPDATE Booking SET Req_Block = [Changed Block]  WHERE Book_ID = ('" + Book_ID + "')";
                 dbConnection.setData(query);
                 //deleting Changed Block Value
-                query = "UPDATE Booking SET [Changed Block] = ''  WHERE Book_ID = ('" + Book_ID + "')";
+                query = "UPDATE Booking SET [Changed Block] = NULL WHERE Book_ID = ('" + Book_ID + "')";
                 dbConnection.setData(query);
 
                 ChangeRoom_Load(this, null);
@@ -327,6 +329,21 @@ namespace Dorm_managment_system
             cboRooms.DataSource = ds.Tables[0];
             cboRooms.DisplayMember = "ID";
             cboRooms.ValueMember = "Status";
+        }
+
+        private void txtBookID_Click(object sender, EventArgs e)
+        {
+            txtBookID.Clear();
+        }
+
+        private void txtCurrentRoom_Enter(object sender, EventArgs e)
+        {
+            txtCurrentRoom.Clear();
+        }
+
+        private void txtBookID_Enter(object sender, EventArgs e)
+        {
+            txtBookID.Clear();
         }
     }
 }

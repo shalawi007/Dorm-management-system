@@ -69,7 +69,10 @@ namespace Dorm_managment_system
 
         private void btnwarfeed_Click(object sender, EventArgs e)
         {
-
+            Hide();
+            var menu = new Review_Feedback();
+            menu.ShowDialog();
+            Close();
         }
 
         private void btnaccreport_Click(object sender, EventArgs e)

@@ -41,6 +41,8 @@ namespace Dorm_managment_system
 
                 query = "UPDATE Rooms SET Status = 'Vacant' WHERE ID = ('" + Room_ID + "') ";
                 dbconnection.setData(query);
+
+                Terminate_Load(this, null);
             }
             else
             {
