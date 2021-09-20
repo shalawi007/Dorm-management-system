@@ -43,10 +43,13 @@ namespace Dorm_managment_system
             this.btnwarfeed = new System.Windows.Forms.Button();
             this.btnssignacc = new System.Windows.Forms.Button();
             this.btnwartermacc = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitter1
@@ -86,7 +89,7 @@ namespace Dorm_managment_system
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -100,7 +103,7 @@ namespace Dorm_managment_system
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(38, 68);
+            this.label1.Location = new System.Drawing.Point(96, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 21);
             this.label1.TabIndex = 1;
@@ -112,6 +115,8 @@ namespace Dorm_managment_system
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.lblstu);
             this.panel4.Location = new System.Drawing.Point(189, 8);
@@ -242,6 +247,31 @@ namespace Dorm_managment_system
             this.btnwartermacc.UseVisualStyleBackColor = false;
             this.btnwartermacc.Click += new System.EventHandler(this.btnwartermacc_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Dorm_managment_system.Properties.Resources.User_icon;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(182, 96);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label2.Location = new System.Drawing.Point(12, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 21);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Welcome ";
+            // 
             // Warden_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,10 +289,10 @@ namespace Dorm_managment_system
             this.Load += new System.EventHandler(this.Warden_Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -282,5 +312,7 @@ namespace Dorm_managment_system
         private System.Windows.Forms.Button btnwartermacc;
         private System.Windows.Forms.Button btnaccreport;
         private System.Windows.Forms.Button btnwarfeed;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
