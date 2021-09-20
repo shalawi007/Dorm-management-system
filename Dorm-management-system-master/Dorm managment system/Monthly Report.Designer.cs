@@ -73,7 +73,7 @@ namespace Dorm_managment_system
             this.gbReport.Size = new System.Drawing.Size(711, 408);
             this.gbReport.TabIndex = 49;
             this.gbReport.TabStop = false;
-            this.gbReport.Text = "Monthly Report :";
+            this.gbReport.Text = "Accomdation Report :";
             // 
             // reportViewer1
             // 
@@ -98,9 +98,9 @@ namespace Dorm_managment_system
             this.lblReport.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lblReport.Location = new System.Drawing.Point(12, 42);
             this.lblReport.Name = "lblReport";
-            this.lblReport.Size = new System.Drawing.Size(150, 22);
+            this.lblReport.Size = new System.Drawing.Size(98, 22);
             this.lblReport.TabIndex = 50;
-            this.lblReport.Text = "Monthly Report :";
+            this.lblReport.Text = "Report of :";
             // 
             // btnreportA
             // 
